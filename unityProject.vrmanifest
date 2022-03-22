@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.vrglow_urp.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "E:\\UNITY\\VR_GR_URP\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "VRGlow_URP [Testing]"
+        }
+      }
+    }
+  ]
+}
