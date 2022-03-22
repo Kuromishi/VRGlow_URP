@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 54000012175907764}
   - component: {fileID: 114000010364751000}
   - component: {fileID: 114000010687615738}
-  - component: {fileID: 114000013394261110}
+  - component: {fileID: 1088985479062883582}
   - component: {fileID: 114000010795441088}
   - component: {fileID: 114000011933169550}
   - component: {fileID: 114000010658121184}
@@ -118,10 +118,10 @@ MonoBehaviour:
   snapAttachEaseInCompleted: 0
   skeletonPoser: {fileID: 0}
   handFollowTransform: 1
-  highlightOnHover: 1
+  highlightOnHover: 0
   hideHighlight: []
   hoverPriority: 0
---- !u!114 &114000013394261110
+--- !u!114 &1088985479062883582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,13 +130,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010777624494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
+  m_Script: {fileID: 11500000, guid: 587e3701ab9354740805d91b046baef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachmentFlags: 341
+  attachmentFlags: 44
   attachmentOffset: {fileID: 0}
   catchingSpeedThreshold: -1
-  releaseVelocityStyle: 3
+  releaseVelocityStyle: 0
   releaseVelocityTimeOffset: -0.011
   scaleReleaseVelocity: 1.1
   scaleReleaseVelocityThreshold: -1
@@ -175,6 +175,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+  saberGrabAction:
+    actionPath: /actions/default/in/GrabGrip
+    needsReinit: 0
 --- !u!114 &114000010795441088
 MonoBehaviour:
   m_ObjectHideFlags: 0
