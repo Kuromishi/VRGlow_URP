@@ -164,7 +164,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  restoreOriginalParent: 0
+  restoreOriginalParent: 1
   onPickUp:
     m_PersistentCalls:
       m_Calls: []
@@ -176,8 +176,8 @@ MonoBehaviour:
       m_Calls: []
   interactable: {fileID: 0}
   saberGrabAction:
-    actionPath: /actions/default/in/GrabGrip
-    needsReinit: 0
+    actionPath: 
+    needsReinit: 1
 --- !u!114 &114000010795441088
 MonoBehaviour:
   m_ObjectHideFlags: 0
