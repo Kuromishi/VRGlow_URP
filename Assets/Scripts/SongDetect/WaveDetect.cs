@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class WaveDetect : MonoBehaviour
 {
+    float timer;
+
+    MeshRenderer mr;
+
     Vector3 saberPosition;
     Vector3 startPosition;
     Vector3 endPosition;
@@ -13,18 +17,16 @@ public class WaveDetect : MonoBehaviour
     public float goodLength;
     public float excellentLength;
 
+    private void Start()
+    {
+        timer = 0;
+        mr = GetComponent<MeshRenderer>();
+    }
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Saber_Main")
+        if (other.gameObject.CompareTag("Saber_Main"))
         {
             saberPosition = other.transform.position;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Saber_Main" || other.tag == "Saber_Sub")
-        {
-            saberPosition = new Vector3 (0, 0, 0);
         }
     }
     void StartDetect_Left()

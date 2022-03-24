@@ -176,8 +176,8 @@ MonoBehaviour:
       m_Calls: []
   interactable: {fileID: 0}
   saberGrabAction:
-    actionPath: 
-    needsReinit: 1
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
 --- !u!114 &114000010795441088
 MonoBehaviour:
   m_ObjectHideFlags: 0
