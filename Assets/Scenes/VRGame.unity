@@ -24984,7 +24984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button: {fileID: 7475812118492003221, guid: 95a36bae98b5c5345b00ba949a3bc952, type: 3}
-  WaveDetect: {fileID: 0}
+  WaveDetect: {fileID: 12406724322403978, guid: c0ab83cc6661ae9439095030bff368a6, type: 3}
 --- !u!1001 &1763018388
 PrefabInstance:
   m_ObjectHideFlags: 0
