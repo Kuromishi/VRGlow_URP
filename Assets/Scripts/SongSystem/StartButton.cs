@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class StartButton : MonoBehaviour
+{
+    public float startSpeed;
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Saber_Main" || collision.gameObject.tag == "Saber_Sub")
+        {
+            if (collision.gameObject.GetComponent<Rigidbody>().velocity.y < 0 && collision.gameObject.GetComponent<Rigidbody>().velocity.magnitude > startSpeed)
+            {
+                //transform.parent.GetComponent<Animator>().Play("SongTest_Button");
+                transform.parent.GetComponent<Animator>().Play("SongTest_Wave");
+                gameObject.SetActive(false);
+            }
+        }
+    }
+}

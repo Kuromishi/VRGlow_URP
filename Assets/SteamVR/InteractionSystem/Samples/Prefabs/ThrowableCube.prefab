@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 114000010658121184}
   m_Layer: 0
   m_Name: ThrowableCube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +30,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000010777624494}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.156, y: 1.05, z: -0.244}
+  m_LocalRotation: {x: -0.12412728, y: 0.14471349, z: -0.049048163, w: 0.9804309}
+  m_LocalPosition: {x: 10.35, y: 1, z: 5.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4042360118214327686}

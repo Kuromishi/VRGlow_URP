@@ -113,7 +113,7 @@ MonoBehaviour:
   goodTimeRange: 1
   excellentTimeRange: 1
   perfectTimeRange: 0.5
-  goodSpeed: 2
-  excellentSpeed: 3
+  goodSpeed: 0.8
+  excellentSpeed: 1.2
   timeState: 0
   speedState: 0
