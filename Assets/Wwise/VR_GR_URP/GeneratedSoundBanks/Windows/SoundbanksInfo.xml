@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>E:\UNITY\VR_GR_URP\Assets\Wwise\VR_GR_URP\</ProjectRoot>
+		<SourceFilesRoot>E:\UNITY\VR_GR_URP\Assets\Wwise\VR_GR_URP\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\UNITY\VR_GR_URP\Assets\Wwise\VR_GR_URP\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\UNITY\VR_GR_URP\Assets\Wwise\VR_GR_URP\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="837375629">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

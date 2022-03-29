@@ -27,16 +27,17 @@ public class WaveDetect : MonoBehaviour
         if (other.gameObject.CompareTag("Saber_Main"))
         {
             saberPosition = other.transform.position;
+            Debug.Log(saberPosition);
         }
     }
     void StartDetect_Left()
     {
-        transform.GetChild(0).gameObject.SetActive(true);
+        //transform.GetChild(0).gameObject.SetActive(true);
         startPosition = saberPosition;
     }
     void EndDetect_Left()
     {
-        transform.GetChild(0).gameObject.SetActive(false);
+        //transform.GetChild(0).gameObject.SetActive(false);
         endPosition = saberPosition;
         moveVector = endPosition - startPosition;
         if (moveVector.z < 0)
@@ -61,12 +62,12 @@ public class WaveDetect : MonoBehaviour
     }
     void StartDetect_Right()
     {
-        transform.GetChild(1).gameObject.SetActive(true);
+        //transform.GetChild(1).gameObject.;
         startPosition = saberPosition;
     }
     void EndDetect_Right()
     {
-        transform.GetChild(1).gameObject.SetActive(false);
+        //transform.GetChild(1).gameObject.SetActive(false);
         endPosition = saberPosition;
         moveVector = endPosition - startPosition;
         if (moveVector.z > 0)
@@ -88,6 +89,10 @@ public class WaveDetect : MonoBehaviour
         {
             Debug.Log("Missed!");
         }
+    }
+    void StartHint()
+    {
+
     }
     void EndWave()
     {
