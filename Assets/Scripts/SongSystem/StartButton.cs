@@ -11,9 +11,8 @@ public class StartButton : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<Rigidbody>().velocity.y < 0 && collision.gameObject.GetComponent<Rigidbody>().velocity.magnitude > startSpeed)
             {
-                //transform.parent.GetComponent<Animator>().Play("SongTest_Button");
-                transform.parent.GetComponent<Animator>().Play("SongTest_Wave");
-                gameObject.SetActive(false);
+                transform.parent.GetComponent<SongControlSystem>().playing = true;
+                Destroy(gameObject);
             }
         }
     }
