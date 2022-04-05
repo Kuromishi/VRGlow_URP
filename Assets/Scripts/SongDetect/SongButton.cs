@@ -6,7 +6,7 @@ public class SongButton : MonoBehaviour
 {
     MeshRenderer mr;
 
-    float timer;
+    float timer = 0;
 
     public float goodTimeRange;
     public float excellentTimeRange;
@@ -18,51 +18,33 @@ public class SongButton : MonoBehaviour
     public enum State { good, excellent, perfect }
     public State timeState;
     public State speedState;
-
-
-    // Start is called before the first frame update
     void Start()
     {
-        timer = 0;
         mr = GetComponent<MeshRenderer>();
     }
-
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         timer += Time.deltaTime;
 
-        if (timer < goodTimeRange)
+        if (timer < perfectTimeRange)
         {
             timeState = State.good;
             mr.material.color = Color.green;
         }
 
-        else if (timer >= goodTimeRange && timer < goodTimeRange + excellentTimeRange)
+        else if (timer >= perfectTimeRange && timer < excellentTimeRange + perfectTimeRange)
         {
             timeState = State.excellent;
             mr.material.color = Color.yellow;
         }
 
-        else if (timer >= goodTimeRange + excellentTimeRange && timer < goodTimeRange + excellentTimeRange + 2 * perfectTimeRange)
+        else if (timer >= excellentTimeRange + perfectTimeRange && timer < goodTimeRange + excellentTimeRange + perfectTimeRange)
         {
             timeState = State.perfect;
             mr.material.color = Color.red;
         }
 
-        else if (timer >= goodTimeRange + excellentTimeRange + 2 * perfectTimeRange && timer < goodTimeRange + 2 * excellentTimeRange + 2 * perfectTimeRange)
-        {
-            timeState = State.excellent;
-            mr.material.color = Color.yellow;
-        }
-
-        else if (timer >= goodTimeRange + 2 * excellentTimeRange + 2 * perfectTimeRange && timer < 2 * goodTimeRange + 2 * excellentTimeRange + 2 * perfectTimeRange)
-        {
-            timeState = State.good;
-            mr.material.color = Color.green;
-        }
-
-        else if (timer >= (goodTimeRange + excellentTimeRange + perfectTimeRange) * 2)
+        else if (timer >= goodTimeRange + excellentTimeRange + perfectTimeRange)
         {
             Debug.Log("Missed!");
             Destroy(gameObject);

@@ -28,9 +28,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7475812118492003221}
   m_LocalRotation: {x: 0, y: 0, z: -0.5, w: 0.8660254}
-  m_LocalPosition: {x: 10, y: 1, z: 5.75}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.55, y: 0.05, z: 0.55}
-  m_Children: []
+  m_Children:
+  - {fileID: 7599765651878035910}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -60}
@@ -110,10 +111,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb02c3c760a5814a8e58c4c27d939c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodTimeRange: 0.05
-  excellentTimeRange: 0.05
-  perfectTimeRange: 0.05
+  goodTimeRange: 0.5
+  excellentTimeRange: 0.5
+  perfectTimeRange: 0.5
   goodSpeed: 0.8
   excellentSpeed: 1.2
   timeState: 0
   speedState: 0
+--- !u!1001 &7426260786480788266
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7475812118492003226}
+    m_Modifications:
+    - target: {fileID: 1042770567934931601, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_Name
+      value: PinkSakura
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926253236632581044, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+      propertyPath: songButton
+      value: 
+      objectReference: {fileID: 7475812118492003221}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+--- !u!4 &7599765651878035910 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1042770567934931692, guid: 6a1bb35f6249c304b96ed8a90e6eb003, type: 3}
+  m_PrefabInstance: {fileID: 7426260786480788266}
+  m_PrefabAsset: {fileID: 0}

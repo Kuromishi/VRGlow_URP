@@ -7,6 +7,7 @@ using UnityEngine;
 public class SongControlSystem : MonoBehaviour
 {
     public bool playing = false;
+    bool songPlayed = false;
 
     public float timer = 0;
     int index = 0;
@@ -14,8 +15,10 @@ public class SongControlSystem : MonoBehaviour
     int numberOfLine;
 
     public GameObject startButton;
-    public GameObject songButton;
+    public GameObject songHintSakura;
     public GameObject waveDetect;
+
+    public AK.Wwise.Event song;
 
     private void Start()
     {
@@ -38,6 +41,11 @@ public class SongControlSystem : MonoBehaviour
     {
         if (playing)
         {
+            if (!songPlayed)
+            {
+                song.Post(gameObject);
+                songPlayed = true;
+            }
             timer += 1;
             if (timer == Convert.ToInt32(timeLineData[index][0]))
             {
@@ -55,6 +63,7 @@ public class SongControlSystem : MonoBehaviour
             if(index == numberOfLine)
             {
                 playing = false;
+                songPlayed = false;
                 timer = 0;
                 Instantiate(startButton, gameObject.transform);
             }
@@ -64,7 +73,7 @@ public class SongControlSystem : MonoBehaviour
 
     void ButtonAppear()
     {
-        Instantiate(songButton, gameObject.transform);
+        Instantiate(songHintSakura, gameObject.transform);
     }
     void WaveDetectStart()
     {
