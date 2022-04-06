@@ -16,10 +16,20 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1077138683">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2957652214">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="251043389" Name="Play_Song" ObjectPath="\Events\Default Work Unit\Play_Song" DurationType="OneShot" DurationMin="212.000000" DurationMax="212.000000">
+					<IncludedMemoryFiles>
+						<File Id="601402125" Language="SFX">
+							<ShortName>一途な失恋を表現した楽曲.wav</ShortName>
+							<Path>SFX\一途な失恋を表現した楽曲_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
