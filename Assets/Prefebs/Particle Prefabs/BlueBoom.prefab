@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3945516798012094316}
   - component: {fileID: 3945516798012094317}
   m_Layer: 0
-  m_Name: PinkBoom
+  m_Name: BlueBoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4828,7 +4828,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8c78ee9ea94ac1c46950cac5c47b82e1, type: 2}
+  - {fileID: 2100000, guid: 4a3cd34e214b37749ae35868cd2b99af, type: 2}
   - {fileID: 2100000, guid: d8bf12ada3a56d64ea6c1ef6cb1692f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

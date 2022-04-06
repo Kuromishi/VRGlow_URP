@@ -4818,7 +4818,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 10549c43014115b45a6418f23cf2f048, type: 2}
+  - {fileID: 2100000, guid: a09141ae55c0d684a8fb6fac8e807995, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9750,7 +9750,7 @@ GameObject:
   - component: {fileID: 3348186492032774047}
   - component: {fileID: 618027231397277381}
   m_Layer: 0
-  m_Name: PinkRim
+  m_Name: BlueRim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15619,7 +15619,7 @@ ParticleSystem:
           inWeight: 0.25142208
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.85
+          time: 0.85587573
           value: 0.47
           inSlope: 0.028305635
           outSlope: 0.028305635
@@ -19397,7 +19397,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f6e7394911b495845933dea297eb07d8, type: 2}
+  - {fileID: 2100000, guid: 3c099a270365c0e4ea29b55476164642, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24261,7 +24261,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2ddd0a7ef959095419576896017717bb, type: 2}
+  - {fileID: 2100000, guid: 786de15e7e2d4434da1d55aaf5e58790, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
