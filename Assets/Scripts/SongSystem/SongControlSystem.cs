@@ -43,11 +43,12 @@ public class SongControlSystem : MonoBehaviour
         {
             if (!songPlayed)
             {
+                AkSoundEngine.StopAll();
                 song.Post(gameObject);
                 songPlayed = true;
             }
             timer += 1;
-            if (timer == Convert.ToInt32(timeLineData[index][0]))
+            if (timer == Convert.ToInt32(timeLineData[index][0]) - 50)
             {
                 switch(Convert.ToInt32(timeLineData[index][1]))
                 {
@@ -56,6 +57,8 @@ public class SongControlSystem : MonoBehaviour
                         break;
                     case 200:
                         WaveDetectStart();
+                        break;
+                    default:
                         break;
                 }
                 index++;
@@ -69,8 +72,6 @@ public class SongControlSystem : MonoBehaviour
             }
         }
     }
-
-
     void ButtonAppear()
     {
         Instantiate(songHintSakura, gameObject.transform);

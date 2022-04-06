@@ -9,10 +9,9 @@ public class SongButtonHintSakura : MonoBehaviour
     private void FixedUpdate()
     {
         timer += 1;
-        if (timer == 300)
+        if (timer == 50)
         {
             Instantiate(songButton, transform.parent.transform);
-            Destroy(gameObject);
         }
     }
 }

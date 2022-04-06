@@ -6,11 +6,13 @@ public class SongButton : MonoBehaviour
 {
     MeshRenderer mr;
 
+    public GameObject boomEffect;
+
     float timer = 0;
 
-    public float goodTimeRange;
-    public float excellentTimeRange;
-    public float perfectTimeRange;
+    public float goodTimeFrame;
+    public float excellentTimeFrame;
+    public float perfectTimeFrame;
 
     public float goodSpeed;
     public float excellentSpeed;
@@ -24,27 +26,27 @@ public class SongButton : MonoBehaviour
     }
     void FixedUpdate()
     {
-        timer += Time.deltaTime;
+        timer += 1;
 
-        if (timer < perfectTimeRange)
+        if (timer < perfectTimeFrame)
         {
-            timeState = State.good;
+            timeState = State.perfect;
             mr.material.color = Color.green;
         }
 
-        else if (timer >= perfectTimeRange && timer < excellentTimeRange + perfectTimeRange)
+        else if (timer >= perfectTimeFrame && timer < excellentTimeFrame + perfectTimeFrame)
         {
             timeState = State.excellent;
             mr.material.color = Color.yellow;
         }
 
-        else if (timer >= excellentTimeRange + perfectTimeRange && timer < goodTimeRange + excellentTimeRange + perfectTimeRange)
+        else if (timer >= excellentTimeFrame + perfectTimeFrame && timer < goodTimeFrame + excellentTimeFrame + perfectTimeFrame)
         {
-            timeState = State.perfect;
+            timeState = State.good;
             mr.material.color = Color.red;
         }
 
-        else if (timer >= goodTimeRange + excellentTimeRange + perfectTimeRange)
+        else if (timer >= goodTimeFrame + excellentTimeFrame + perfectTimeFrame)
         {
             Debug.Log("Missed!");
             Destroy(gameObject);
@@ -88,6 +90,7 @@ public class SongButton : MonoBehaviour
                     Debug.Log("Perfect!");
                     break;
             }
+            Instantiate(boomEffect, transform.parent.transform);
             Destroy(gameObject);
         }
     }
