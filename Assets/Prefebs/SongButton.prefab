@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7475812118492003226}
-  - component: {fileID: 7475812118492003225}
-  - component: {fileID: 7475812118492003224}
-  - component: {fileID: 7475812118492003227}
-  - component: {fileID: 1915873848108144326}
+  - component: {fileID: 6927191544056265075}
+  - component: {fileID: 2754260432088938335}
+  - component: {fileID: 4353048225754677963}
+  - component: {fileID: 2769262007672934101}
   m_Layer: 0
   m_Name: SongButton
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -60}
---- !u!33 &7475812118492003225
+--- !u!33 &6927191544056265075
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7475812118492003221}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7475812118492003224
+--- !u!23 &2754260432088938335
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7475812118492003227
+--- !u!64 &4353048225754677963
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,7 +98,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1915873848108144326
+--- !u!114 &2769262007672934101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,8 +113,8 @@ MonoBehaviour:
   boomEffect: {fileID: 3945516798012094307, guid: 0be7c6dbc7e8e944db944fcf2d749341, type: 3}
   goodTimeFrame: 5
   excellentTimeFrame: 5
-  perfectTimeFrame: 10
-  goodSpeed: 0.8
-  excellentSpeed: 1.2
+  perfectTimeFrame: 50
+  goodSpeed: 0.75
+  excellentSpeed: 1
   timeState: 0
   speedState: 0

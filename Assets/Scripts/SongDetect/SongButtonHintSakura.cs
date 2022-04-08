@@ -9,7 +9,7 @@ public class SongButtonHintSakura : MonoBehaviour
     private void FixedUpdate()
     {
         timer += 1;
-        if (timer == 50)
+        if (timer == 40)
         {
             Instantiate(songButton, transform.parent.transform);
         }

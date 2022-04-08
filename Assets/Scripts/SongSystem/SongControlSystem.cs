@@ -56,7 +56,7 @@ public class SongControlSystem : MonoBehaviour
                         ButtonAppear();
                         break;
                     case 200:
-                        WaveDetectStart();
+                        //WaveDetectStart();
                         break;
                     default:
                         break;

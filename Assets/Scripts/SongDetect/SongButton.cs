@@ -90,7 +90,7 @@ public class SongButton : MonoBehaviour
                     Debug.Log("Perfect!");
                     break;
             }
-            Instantiate(boomEffect, transform.parent.transform);
+            Instantiate(boomEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
