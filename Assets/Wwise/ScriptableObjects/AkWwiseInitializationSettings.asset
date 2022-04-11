@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: AkWwiseInitializationSettings
   m_EditorClassIdentifier: 
   PlatformSettingsNameList:
+  - Mac
   - Windows
   PlatformSettingsList:
+  - {fileID: 11400000, guid: 614526695277bb247a589264c71d8dfe, type: 2}
   - {fileID: 11400000, guid: e2762894c20ba75449bbecc0bbfb1c10, type: 2}
   InvalidReferencePlatforms: []
   UserSettings:
@@ -61,6 +63,8 @@ MonoBehaviour:
     m_RenderDuringFocusLoss: 0
     m_SoundBankPersistentDataPath: 
     m_UseAsyncOpen: 0
+    m_MemoryAllocationSizeLimit: 0
+    m_MemoryDebugLevel: 0
   CommsSettings:
     m_PoolSize: 262144
     m_DiscoveryBroadcastPort: 24024

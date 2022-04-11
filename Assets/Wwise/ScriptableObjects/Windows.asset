@@ -62,6 +62,8 @@ MonoBehaviour:
   - AdvancedSettings.m_SoundBankPersistentDataPath
   - AdvancedSettings.m_DebugOutOfRangeCheckEnabled
   - AdvancedSettings.m_DebugOutOfRangeLimit
+  - AdvancedSettings.m_MemoryAllocationSizeLimit
+  - AdvancedSettings.m_MemoryDebugLevel
   UserSettings:
     m_BasePath: Audio\GeneratedSoundBanks
     m_StartupLanguage: English(US)
@@ -106,6 +108,8 @@ MonoBehaviour:
     m_RenderDuringFocusLoss: 0
     m_SoundBankPersistentDataPath: 
     m_UseAsyncOpen: 0
+    m_MemoryAllocationSizeLimit: 0
+    m_MemoryDebugLevel: 0
     MaxSystemAudioObjects: 128
   CommsSettings:
     m_PoolSize: 262144

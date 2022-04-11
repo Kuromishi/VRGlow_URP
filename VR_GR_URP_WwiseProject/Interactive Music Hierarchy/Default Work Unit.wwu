@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{520D192B-9E82-43AF-9DF0-32BDC1CFDFAA}" SchemaVersion="103">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{520D192B-9E82-43AF-9DF0-32BDC1CFDFAA}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="MusicSegment" ID="{2A68D391-C186-4F43-99C6-EE4D9509611A}" ShortID="1047401513">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="256000"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{08163AC6-6849-4FE7-AA17-77DD0D9A0D5F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6C29405-D926-4985-94D1-7395ECABE4A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="一途な失恋を表現した楽曲" ID="{C8D28520-209C-4BDC-9B0D-4C2ADA4C6F2D}" ShortID="272340273">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6C29405-D926-4985-94D1-7395ECABE4A4}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="一途な失恋を表現した楽曲" ID="{E23F97E7-8BDA-433E-B05F-13E38EDAF51A}">
+									<PropertyList>
+										<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>一途な失恋を表現した楽曲.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="350498411"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{DE51623E-E0BE-46E4-834F-75F7CC3E898F}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList/>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{DD92326B-C597-4B8C-B716-66DDE64124B8}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="一途な失恋を表現した楽曲" ID="{2E2CDF07-69FC-4D59-B289-0E81F1F3731D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="212000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="一途な失恋を表現した楽曲" ID="{E23F97E7-8BDA-433E-B05F-13E38EDAF51A}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{6D15279C-B760-4AD7-A674-C89A0B00EA54}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{6B7C6555-F9CE-47A8-BE3B-F2A3196B90F0}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="212000"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

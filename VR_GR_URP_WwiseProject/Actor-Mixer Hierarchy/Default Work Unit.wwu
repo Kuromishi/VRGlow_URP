@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FF9123D7-D811-4670-A81F-4608E9B7C09C}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{FF9123D7-D811-4670-A81F-4608E9B7C09C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Song" ID="{41ADCB17-130C-429E-92EA-61045C25E965}" ShortID="666932098">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{08163AC6-6849-4FE7-AA17-77DD0D9A0D5F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6C29405-D926-4985-94D1-7395ECABE4A4}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="一途な失恋を表現した楽曲" ID="{9C2A0F9D-CDB1-483A-AA84-FFC211B51EFD}">
+							<PropertyList>
+								<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>一途な失恋を表現した楽曲.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="416915846"/>
+							</MediaIDList>
+							<PluginInnerObjectList>
+								<List Name="Markers">
+									<PluginInnerObject Name="" ID="{615553BB-61B1-4D28-B63E-9437EF680550}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
+											<Property Name="Time" Type="Real64" Value="0.15217"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{FF714627-F125-4F17-B72C-3112DF53839F}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="1.41957"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{962ED564-4B52-4FB9-82EB-337DCD2B9EB6}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="2.45652"/>
+										</PropertyList>
+									</PluginInnerObject>
+								</List>
+							</PluginInnerObjectList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="一途な失恋を表現した楽曲" ID="{9C2A0F9D-CDB1-483A-AA84-FFC211B51EFD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -36,6 +36,7 @@ public class SongControlSystem : MonoBehaviour
             //Debug.Log(timeLineData[i][0]);
             //Debug.Log(timeLineData[i][1]);
         }
+        
     }
     private void FixedUpdate()
     {
@@ -44,26 +45,27 @@ public class SongControlSystem : MonoBehaviour
             if (!songPlayed)
             {
                 AkSoundEngine.StopAll();
-                song.Post(gameObject);
+                //song.Post(gameObject);
+                GetComponent<AkEvent>().enabled = true;
                 songPlayed = true;
             }
-            timer += 1;
-            if (timer == Convert.ToInt32(timeLineData[index][0]) - 50)
-            {
-                switch(Convert.ToInt32(timeLineData[index][1]))
-                {
-                    case 100:
-                        ButtonAppear();
-                        break;
-                    case 200:
-                        //WaveDetectStart();
-                        break;
-                    default:
-                        break;
-                }
-                index++;
-            }
-            if(index == numberOfLine)
+            //timer += 1;
+            //if (timer == Convert.ToInt32(timeLineData[index][0]) - 50)
+            //{
+            //    switch(Convert.ToInt32(timeLineData[index][1]))
+            //    {
+            //        case 100:
+            //            ButtonAppear();
+            //            break;
+            //        case 200:
+            //            //WaveDetectStart();
+            //            break;
+            //        default:
+            //            break;
+            //    }
+            //    index++;
+            //}
+            if (index == numberOfLine + 1)
             {
                 playing = false;
                 songPlayed = false;
@@ -72,11 +74,11 @@ public class SongControlSystem : MonoBehaviour
             }
         }
     }
-    void ButtonAppear()
+    public void ButtonAppear()
     {
         Instantiate(songHintSakura, gameObject.transform);
     }
-    void WaveDetectStart()
+    public void WaveDetectStart()
     {
         Instantiate(waveDetect, gameObject.transform);
     }
