@@ -15,6 +15,7 @@
 					<ChildrenList>
 						<AudioFileSource Name="一途な失恋を表現した楽曲" ID="{9C2A0F9D-CDB1-483A-AA84-FFC211B51EFD}">
 							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="212"/>
 								<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 							</PropertyList>
@@ -27,18 +28,22 @@
 								<List Name="Markers">
 									<PluginInnerObject Name="" ID="{615553BB-61B1-4D28-B63E-9437EF680550}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="0.15217"/>
+											<Property Name="Time" Type="Real64" Value="0.20715"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{FF714627-F125-4F17-B72C-3112DF53839F}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="1.41957"/>
+											<Property Name="Time" Type="Real64" Value="1.34268"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{962ED564-4B52-4FB9-82EB-337DCD2B9EB6}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="2.45652"/>
+											<Property Name="Time" Type="Real64" Value="3.54765"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{9B4CB3A3-CD39-4E04-9124-F4602036D288}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="2.44753"/>
 										</PropertyList>
 									</PluginInnerObject>
 								</List>
