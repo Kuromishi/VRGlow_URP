@@ -15,7 +15,6 @@
 					<ChildrenList>
 						<AudioFileSource Name="一途な失恋を表現した楽曲" ID="{9C2A0F9D-CDB1-483A-AA84-FFC211B51EFD}">
 							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="212"/>
 								<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 							</PropertyList>
@@ -28,101 +27,188 @@
 								<List Name="Markers">
 									<PluginInnerObject Name="" ID="{929E2380-7B75-43C6-BAB2-E7A63865518B}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="8.66"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="0.645"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{3EAF5BC2-B85E-48CE-B947-8E2E16741D01}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="9.16"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="1.5275"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{0700AAB0-2F4E-4B12-9030-F0E6D10142EF}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="9.74"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="2.41"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{02DCECDB-FEF0-426B-9E5F-9B2B33D8DD38}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="10.3"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="3.2925"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{5E7837B6-6531-4E11-96BF-BCF41D81082F}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="10.86"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="4.175"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{C04A98AC-2821-4B0B-A20C-0B2B621C518B}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="11.42"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="5.0575"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{CD41231D-D94F-4D57-9E62-2E1AD4E7CB9E}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="11.96"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="5.94"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{8A3BA119-AF57-4005-9DC2-302D10DD8241}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="12.52"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="6.8225"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{CAADA669-61E3-449D-94B5-4CBB1506A4F5}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="13.1"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="7.705"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{AE186AAF-4359-44CA-BE57-39AC8A353424}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="13.68"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="8.5875"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{45EED779-2923-4FA4-81A7-41D88A73EF42}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="14.2"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="9.47"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{5F857ED2-814E-4871-A90C-20FFEA4E89D3}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="14.76"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="10.3525"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{4933C08B-E1FE-4AC4-AEE9-958296748C50}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="15.34"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="11.235"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{DBE95175-0080-4EAE-B032-B40EE5A91D1B}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="15.9"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="12.1175"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{C388BB24-E1BD-4A49-AEB7-2865CDB5CF0B}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="16.46"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="13"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{61DA5E77-FB7D-4B2B-9E43-8E51FC2B21AF}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="17.02"/>
+											<Property Name="Label" Type="string" Value="1,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="13.8825"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{EE93B1AC-3578-4A21-BF68-9EC21912AC43}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="1"/>
-											<Property Name="Time" Type="Real64" Value="17.56"/>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="14.765"/>
 										</PropertyList>
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{2B326095-A7B4-4D03-BC01-3EFC2B554813}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="18.12"/>
+											<Property Name="Label" Type="string" Value="1,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="15.6475"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{5957861E-8985-4E5A-A54C-1C337B6A5CCD}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="16.53"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{3EDFD568-511F-4B79-BCEA-B94ACD5C1E85}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="1,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="17.4125"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{59EE5526-4926-4ED2-AD0B-F4A6D8C404C1}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="18.295"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{3496A937-2507-42E6-9F0F-3F3D7C979D0C}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="1,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="19.1775"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{BB0C629F-6362-46AA-826C-1E666500A645}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="20.06"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{9CF50C7F-14A8-4A3C-8DC3-92EAC8225CF5}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="1,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="20.9425"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{DE826653-879A-4C68-AEF7-C9737A0740D9}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="21.825"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{3282C5AC-E13A-41DD-82A4-AD13455C676C}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="1,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="22.7075"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{F6AC0E22-BB3B-4ED6-ADAF-5B70B606BE93}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="23.59"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{7E450361-C88D-4597-A47F-0092686EB48E}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="1,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="24.4725"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{C73835A1-DB07-4802-8008-961BD1B40C9D}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="25.355"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{3E8ED1B1-793D-46A2-B5A1-1D90400F8FD1}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="1,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="26.2375"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{072E3AD8-8DAA-40FA-ACD4-D46659D70E2F}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Label" Type="string" Value="0,0,0,0,0,0,0"/>
+											<Property Name="Time" Type="Real64" Value="27.12"/>
 										</PropertyList>
 									</PluginInnerObject>
 								</List>
