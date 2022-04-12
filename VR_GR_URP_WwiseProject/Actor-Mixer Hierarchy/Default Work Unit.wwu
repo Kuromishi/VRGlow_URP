@@ -27,6 +27,7 @@
 								<List Name="Markers">
 									<PluginInnerObject Name="" ID="{929E2380-7B75-43C6-BAB2-E7A63865518B}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
 											<Property Name="Time" Type="Real64" Value="8.66"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -37,6 +38,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{0700AAB0-2F4E-4B12-9030-F0E6D10142EF}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
 											<Property Name="Time" Type="Real64" Value="9.74"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -47,6 +49,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{5E7837B6-6531-4E11-96BF-BCF41D81082F}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
 											<Property Name="Time" Type="Real64" Value="10.86"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -57,6 +60,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{CD41231D-D94F-4D57-9E62-2E1AD4E7CB9E}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
 											<Property Name="Time" Type="Real64" Value="11.96"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -67,6 +71,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{CAADA669-61E3-449D-94B5-4CBB1506A4F5}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
 											<Property Name="Time" Type="Real64" Value="13.1"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -77,6 +82,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{45EED779-2923-4FA4-81A7-41D88A73EF42}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
 											<Property Name="Time" Type="Real64" Value="14.2"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -87,6 +93,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{4933C08B-E1FE-4AC4-AEE9-958296748C50}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
 											<Property Name="Time" Type="Real64" Value="15.34"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -97,6 +104,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{C388BB24-E1BD-4A49-AEB7-2865CDB5CF0B}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
 											<Property Name="Time" Type="Real64" Value="16.46"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -107,6 +115,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{EE93B1AC-3578-4A21-BF68-9EC21912AC43}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
+											<Property Name="Label" Type="string" Value="1"/>
 											<Property Name="Time" Type="Real64" Value="17.56"/>
 										</PropertyList>
 									</PluginInnerObject>
