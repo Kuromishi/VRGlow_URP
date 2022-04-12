@@ -12,7 +12,8 @@ public class SongButtonHintSakura : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 1.00 && !buttonSpawned)
         {
-            Instantiate(songButton, transform.parent.transform);
+            GameObject button = Instantiate(songButton, transform.parent.transform);
+            button.transform.position = transform.position;
             buttonSpawned = true;
         }
     }

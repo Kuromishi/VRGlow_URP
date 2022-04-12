@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>E:\UNITY\VR_GR_URP\VR_GR_URP_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\UNITY\VR_GR_URP\VR_GR_URP_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>E:\UNITY\VR_GR_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\UNITY\VR_GR_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2510671251">
+		<SoundBank Id="3161908922" Language="SFX" Hash="222976533">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>

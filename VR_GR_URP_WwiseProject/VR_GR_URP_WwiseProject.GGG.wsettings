@@ -25,8 +25,8 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="C7FxN4mDhkicpQvCPZdQnQ=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="3SBbtLMn70+OQa9VjbhaZw=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="mFMFboeUL0ma3ayXIrR5MAEnDpT/////6F3rhMobq06EBgWtWiL9KwEnDpT/////"/>
-				<Property Name="Interactive Music\x64_{2A68D391-C186-4F43-99C6-EE4D9509611A} - SegmentEditorZoomInfo" Type="string" Value="OTHkHdJHIEAPmPIOxzcUQAoYPJb3ahtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAwFpA"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="6F3rhMobq06EBgWtWiL9KwEn887/////mFMFboeUL0ma3ayXIrR5MAEn887/////"/>
+				<Property Name="Interactive Music\x64_{2A68D391-C186-4F43-99C6-EE4D9509611A} - SegmentEditorZoomInfo" Type="string" Value="OTHkHdJHIEAPmPIOxzcUQAoYPJb3ahtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAgFpA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>

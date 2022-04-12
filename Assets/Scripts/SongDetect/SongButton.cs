@@ -32,22 +32,22 @@ public class SongButton : MonoBehaviour
             timeState = State.excellent;
         }
 
-        else if (timer >= goodTimeSeconds + excellentTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds * 2)
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds)
         {
             timeState = State.good;
         }
 
-        else if (timer >= goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds * 2 && timer < goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds * 2)
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds)
         {
             timeState = State.good;
         }
 
-        else if (timer >= goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds * 2 && timer < goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds * 2)
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds && timer < goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds)
         {
             timeState = State.good;
         }
 
-        else if (timer >= goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds * 2)
+        else if (timer >= goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds)
         {
             Debug.Log("Missed!");
             Destroy(gameObject);
