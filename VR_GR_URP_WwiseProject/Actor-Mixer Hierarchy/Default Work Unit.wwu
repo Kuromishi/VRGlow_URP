@@ -15,7 +15,6 @@
 					<ChildrenList>
 						<AudioFileSource Name="一途な失恋を表現した楽曲" ID="{9C2A0F9D-CDB1-483A-AA84-FFC211B51EFD}">
 							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="212"/>
 								<Property Name="MarkerInputMode" Type="int16" Value="2"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 							</PropertyList>
@@ -26,24 +25,94 @@
 							</MediaIDList>
 							<PluginInnerObjectList>
 								<List Name="Markers">
-									<PluginInnerObject Name="" ID="{615553BB-61B1-4D28-B63E-9437EF680550}" PluginName="Marker" CompanyID="0" PluginID="993">
+									<PluginInnerObject Name="" ID="{929E2380-7B75-43C6-BAB2-E7A63865518B}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="0.20715"/>
+											<Property Name="Time" Type="Real64" Value="8.66"/>
 										</PropertyList>
 									</PluginInnerObject>
-									<PluginInnerObject Name="" ID="{FF714627-F125-4F17-B72C-3112DF53839F}" PluginName="Marker" CompanyID="0" PluginID="993">
+									<PluginInnerObject Name="" ID="{3EAF5BC2-B85E-48CE-B947-8E2E16741D01}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="1.34268"/>
+											<Property Name="Time" Type="Real64" Value="9.16"/>
 										</PropertyList>
 									</PluginInnerObject>
-									<PluginInnerObject Name="" ID="{962ED564-4B52-4FB9-82EB-337DCD2B9EB6}" PluginName="Marker" CompanyID="0" PluginID="993">
+									<PluginInnerObject Name="" ID="{0700AAB0-2F4E-4B12-9030-F0E6D10142EF}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="3.54765"/>
+											<Property Name="Time" Type="Real64" Value="9.74"/>
 										</PropertyList>
 									</PluginInnerObject>
-									<PluginInnerObject Name="" ID="{9B4CB3A3-CD39-4E04-9124-F4602036D288}" PluginName="Marker" CompanyID="0" PluginID="993">
+									<PluginInnerObject Name="" ID="{02DCECDB-FEF0-426B-9E5F-9B2B33D8DD38}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Time" Type="Real64" Value="2.44753"/>
+											<Property Name="Time" Type="Real64" Value="10.3"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{5E7837B6-6531-4E11-96BF-BCF41D81082F}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="10.86"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{C04A98AC-2821-4B0B-A20C-0B2B621C518B}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="11.42"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{CD41231D-D94F-4D57-9E62-2E1AD4E7CB9E}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="11.96"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{8A3BA119-AF57-4005-9DC2-302D10DD8241}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="12.52"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{CAADA669-61E3-449D-94B5-4CBB1506A4F5}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="13.1"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{AE186AAF-4359-44CA-BE57-39AC8A353424}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="13.68"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{45EED779-2923-4FA4-81A7-41D88A73EF42}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="14.2"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{5F857ED2-814E-4871-A90C-20FFEA4E89D3}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="14.76"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{4933C08B-E1FE-4AC4-AEE9-958296748C50}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="15.34"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{DBE95175-0080-4EAE-B032-B40EE5A91D1B}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="15.9"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{C388BB24-E1BD-4A49-AEB7-2865CDB5CF0B}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="16.46"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{61DA5E77-FB7D-4B2B-9E43-8E51FC2B21AF}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="17.02"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{EE93B1AC-3578-4A21-BF68-9EC21912AC43}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="17.56"/>
+										</PropertyList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{2B326095-A7B4-4D03-BC01-3EFC2B554813}" PluginName="Marker" CompanyID="0" PluginID="993">
+										<PropertyList>
+											<Property Name="Time" Type="Real64" Value="18.12"/>
 										</PropertyList>
 									</PluginInnerObject>
 								</List>
