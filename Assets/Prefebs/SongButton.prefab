@@ -111,9 +111,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boomEffect: {fileID: 3945516798012094307, guid: 0be7c6dbc7e8e944db944fcf2d749341, type: 3}
-  goodTimeFrame: 5
-  excellentTimeFrame: 5
-  perfectTimeFrame: 50
+  goodTimeSeconds: 0.1
+  excellentTimeSeconds: 0.15
+  perfectTimeSeconds: 0.5
   goodSpeed: 0.75
   excellentSpeed: 1
   timeState: 0

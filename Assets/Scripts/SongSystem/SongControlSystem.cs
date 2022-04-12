@@ -33,6 +33,7 @@ public class SongControlSystem : MonoBehaviour
         for (int i = 0 ; i < numberOfLine; i++)
         {
             timeLineData[i] = lineTimeLineData[i].Split(',');
+            //Debug.Log(i);
             //Debug.Log(timeLineData[i][0]);
             //Debug.Log(timeLineData[i][1]);
         }
@@ -45,26 +46,10 @@ public class SongControlSystem : MonoBehaviour
             if (!songPlayed)
             {
                 AkSoundEngine.StopAll();
-                //song.Post(gameObject);
-                GetComponent<AkEvent>().enabled = true;
+                song.Post(gameObject, (uint)AkCallbackType.AK_Marker, ButtonAppear);
+                //GetComponent<AkEvent>().enabled = true;
                 songPlayed = true;
             }
-            //timer += 1;
-            //if (timer == Convert.ToInt32(timeLineData[index][0]) - 50)
-            //{
-            //    switch(Convert.ToInt32(timeLineData[index][1]))
-            //    {
-            //        case 100:
-            //            ButtonAppear();
-            //            break;
-            //        case 200:
-            //            //WaveDetectStart();
-            //            break;
-            //        default:
-            //            break;
-            //    }
-            //    index++;
-            //}
             if (index == numberOfLine + 1)
             {
                 playing = false;
@@ -74,9 +59,13 @@ public class SongControlSystem : MonoBehaviour
             }
         }
     }
-    public void ButtonAppear()
+    public void ButtonAppear(object in_cookie, AkCallbackType in_type, object in_info)
     {
-        Instantiate(songHintSakura, gameObject.transform);
+        if (Convert.ToInt32(timeLineData[index][1]) == 1)
+        {
+            Instantiate(songHintSakura, gameObject.transform);
+        }
+        index++;
     }
     public void WaveDetectStart()
     {

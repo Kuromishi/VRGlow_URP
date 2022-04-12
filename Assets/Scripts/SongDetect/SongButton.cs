@@ -10,9 +10,9 @@ public class SongButton : MonoBehaviour
 
     float timer = 0;
 
-    public float goodTimeFrame;
-    public float excellentTimeFrame;
-    public float perfectTimeFrame;
+    public float goodTimeSeconds;
+    public float excellentTimeSeconds;
+    public float perfectTimeSeconds;
 
     public float goodSpeed;
     public float excellentSpeed;
@@ -26,27 +26,27 @@ public class SongButton : MonoBehaviour
     }
     void FixedUpdate()
     {
-        timer += 1;
+        timer += Time.deltaTime;
 
-        if (timer < perfectTimeFrame)
+        if (timer < perfectTimeSeconds)
         {
             timeState = State.perfect;
             mr.material.color = Color.green;
         }
 
-        else if (timer >= perfectTimeFrame && timer < excellentTimeFrame + perfectTimeFrame)
+        else if (timer >= perfectTimeSeconds && timer < excellentTimeSeconds + perfectTimeSeconds)
         {
             timeState = State.excellent;
             mr.material.color = Color.yellow;
         }
 
-        else if (timer >= excellentTimeFrame + perfectTimeFrame && timer < goodTimeFrame + excellentTimeFrame + perfectTimeFrame)
+        else if (timer >= excellentTimeSeconds + perfectTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds)
         {
             timeState = State.good;
             mr.material.color = Color.red;
         }
 
-        else if (timer >= goodTimeFrame + excellentTimeFrame + perfectTimeFrame)
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds)
         {
             Debug.Log("Missed!");
             Destroy(gameObject);

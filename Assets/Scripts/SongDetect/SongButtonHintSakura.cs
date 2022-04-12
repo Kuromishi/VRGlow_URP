@@ -6,12 +6,14 @@ public class SongButtonHintSakura : MonoBehaviour
 {
     public GameObject songButton;
     float timer = 0;
+    bool buttonSpawned = false;
     private void FixedUpdate()
     {
-        timer += 1;
-        if (timer == 40)
+        timer += Time.deltaTime;
+        if (timer >= 1.25 && !buttonSpawned)
         {
             Instantiate(songButton, transform.parent.transform);
+            buttonSpawned = true;
         }
     }
 }
