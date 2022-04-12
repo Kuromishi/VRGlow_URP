@@ -6,10 +6,14 @@ using UnityEngine;
 
 public class SongControlSystem : MonoBehaviour
 {
+    float timer = 0;
+
+    public static int score = 0;
+
     public bool playing = false;
     bool songPlayed = false;
+    bool scoreShowed = false;
 
-    public float timer = 0;
     int index = 0;
     string[][] timeLineData;
     int numberOfLine;
@@ -22,6 +26,8 @@ public class SongControlSystem : MonoBehaviour
 
     private void Start()
     {
+        index = 0;
+
         TextAsset baseAsset = Resources.Load("TimeLine", typeof(TextAsset)) as TextAsset;
 
         string[] lineTimeLineData = Regex.Split(baseAsset.text, "\r\n", RegexOptions.IgnoreCase);
@@ -33,11 +39,9 @@ public class SongControlSystem : MonoBehaviour
         for (int i = 0 ; i < numberOfLine; i++)
         {
             timeLineData[i] = lineTimeLineData[i].Split(',');
-            //Debug.Log(i);
             //Debug.Log(timeLineData[i][0]);
             //Debug.Log(timeLineData[i][1]);
         }
-        
     }
     private void FixedUpdate()
     {
@@ -46,16 +50,25 @@ public class SongControlSystem : MonoBehaviour
             if (!songPlayed)
             {
                 AkSoundEngine.StopAll();
+                score = 0;
                 song.Post(gameObject, (uint)AkCallbackType.AK_Marker, ButtonAppear);
-                //GetComponent<AkEvent>().enabled = true;
                 songPlayed = true;
             }
-            if (index == numberOfLine + 1)
+            //if (index == numberOfLine)
+            //{
+            //    playing = false;
+            //    songPlayed = false;
+            //    Instantiate(startButton, gameObject.transform);
+            //}
+        }
+        if (index == numberOfLine - 1 && !scoreShowed)
+        {
+            timer += Time.deltaTime;
+            if (timer >= 3.0)
             {
-                playing = false;
-                songPlayed = false;
+                Debug.Log("Final Score: " + score);
+                scoreShowed = true;
                 timer = 0;
-                Instantiate(startButton, gameObject.transform);
             }
         }
     }

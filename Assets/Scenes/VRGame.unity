@@ -32020,7 +32020,6 @@ GameObject:
   - component: {fileID: 1760813484}
   - component: {fileID: 1760813485}
   - component: {fileID: 1760813486}
-  - component: {fileID: 1760813483}
   m_Layer: 0
   m_Name: System
   m_TagString: Untagged
@@ -32043,39 +32042,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1760813483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760813481}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b388c9f88d6aeb34da3348df7dd724f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7c8d870b1565d3349a000b2bcb0a7b2c, type: 2}
-  useCallbacks: 1
-  Callbacks:
-  - Flags:
-      value: 4
-    FunctionName: ButtonAppear
-    GameObject: {fileID: 1760813481}
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &1760813484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32089,7 +32055,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playing: 0
-  timer: 0
   startButton: {fileID: 7475812118492003221, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
   songHintSakura: {fileID: 3348186492032774112, guid: 117b14c57dde46c43aef4334b3459d45, type: 3}
   waveDetect: {fileID: 12406724322403978, guid: c0ab83cc6661ae9439095030bff368a6, type: 3}

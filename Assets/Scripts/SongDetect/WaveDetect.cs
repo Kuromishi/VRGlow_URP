@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class WaveDetect : MonoBehaviour
 {
-    float timer;
-
     MeshRenderer mr;
 
     Vector3 saberPosition;
@@ -19,7 +17,6 @@ public class WaveDetect : MonoBehaviour
 
     private void Start()
     {
-        timer = 0;
         mr = GetComponent<MeshRenderer>();
     }
     private void OnTriggerStay(Collider other)

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SongButton : MonoBehaviour
 {
-    MeshRenderer mr;
-
     public GameObject boomEffect;
 
     float timer = 0;
@@ -20,33 +18,36 @@ public class SongButton : MonoBehaviour
     public enum State { good, excellent, perfect }
     public State timeState;
     public State speedState;
-    void Start()
-    {
-        mr = GetComponent<MeshRenderer>();
-    }
     void FixedUpdate()
     {
         timer += Time.deltaTime;
 
-        if (timer < perfectTimeSeconds)
+        if (timer < goodTimeSeconds)
         {
             timeState = State.perfect;
-            mr.material.color = Color.green;
         }
 
-        else if (timer >= perfectTimeSeconds && timer < excellentTimeSeconds + perfectTimeSeconds)
+        else if (timer >= goodTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds)
         {
             timeState = State.excellent;
-            mr.material.color = Color.yellow;
         }
 
-        else if (timer >= excellentTimeSeconds + perfectTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds)
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds * 2)
         {
             timeState = State.good;
-            mr.material.color = Color.red;
         }
 
-        else if (timer >= goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds)
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds * 2 && timer < goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds * 2)
+        {
+            timeState = State.good;
+        }
+
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds * 2 && timer < goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds * 2)
+        {
+            timeState = State.good;
+        }
+
+        else if (timer >= goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds * 2)
         {
             Debug.Log("Missed!");
             Destroy(gameObject);
@@ -82,12 +83,15 @@ public class SongButton : MonoBehaviour
             {
                 case State.good:
                     Debug.Log("Good!");
+                    SongControlSystem.score += 1;
                     break;
                 case State.excellent:
                     Debug.Log("Excellent!");
+                    SongControlSystem.score += 3;
                     break;
                 case State.perfect:
                     Debug.Log("Perfect!");
+                    SongControlSystem.score += 5;
                     break;
             }
             Instantiate(boomEffect, transform.position, transform.rotation);

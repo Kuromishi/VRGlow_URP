@@ -10,7 +10,7 @@ public class SongButtonHintSakura : MonoBehaviour
     private void FixedUpdate()
     {
         timer += Time.deltaTime;
-        if (timer >= 1.25 && !buttonSpawned)
+        if (timer >= 1.00 && !buttonSpawned)
         {
             Instantiate(songButton, transform.parent.transform);
             buttonSpawned = true;
