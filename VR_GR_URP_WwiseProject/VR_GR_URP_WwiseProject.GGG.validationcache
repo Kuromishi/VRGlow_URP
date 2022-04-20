@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\VR_GR_URP_WwiseProject.wproj" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\VR_GR_URP_WwiseProject.GGG.wsettings" DateLow="1650467974" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\States\Default Work Unit.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Queries\Factory Queries.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1650466310" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Events\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Effects\Factory Effects.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1650466309" DateHigh="0"/>
+	<ValidationCacheItem File="E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1650473434" DateHigh="0"/>
 	<ValidationCacheItem File="E:\UNITY\VR_GR_URP_WwiseIntegrationTemp\VR_GR_URP_WwiseProject\VR_GR_URP_WwiseProject.wproj" DateLow="1649545207" DateHigh="0"/>
 	<ValidationCacheItem File="E:\UNITY\VR_GR_URP_WwiseIntegrationTemp\VR_GR_URP_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1649545207" DateHigh="0"/>
 	<ValidationCacheItem File="E:\UNITY\VR_GR_URP_WwiseIntegrationTemp\VR_GR_URP_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1649545207" DateHigh="0"/>

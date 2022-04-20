@@ -32075,6 +32075,7 @@ MonoBehaviour:
   songHintSakura_Blue: {fileID: 5423692045830140283, guid: d5cdf0287fd83d64c82a0b4383761fc5, type: 3}
   songHintSakura_Pink: {fileID: 8927004741537974250, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
   waveDetect: {fileID: 12406724322403978, guid: c0ab83cc6661ae9439095030bff368a6, type: 3}
+  npcController: {fileID: 641871390}
   song:
     idInternal: 0
     valueGuidInternal: 
@@ -32931,6 +32932,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1760813482}
     m_Modifications:
+    - target: {fileID: 1509932324430207165, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
+      propertyPath: triggerList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509932324430207165, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
+      propertyPath: triggerList.Array.data[0]
+      value: -358577003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509932324430207165, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
+      propertyPath: triggerList.Array.data[1]
+      value: -358577003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509932324430207165, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
+      propertyPath: Callbacks.Array.data[0].GameObject
+      value: 
+      objectReference: {fileID: 1760813481}
     - target: {fileID: 7475812118492003221, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
       propertyPath: m_Name
       value: StartButton
@@ -32979,7 +32996,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -60
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1509932324430207165, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
+    - {fileID: 5879243886636569100, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
 --- !u!4 &1820189237 stripped
 Transform:

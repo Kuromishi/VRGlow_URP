@@ -111,7 +111,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSpeed: 1.5
-  song:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b6675a6252ab8794a87cd6d14d0583ca, type: 2}

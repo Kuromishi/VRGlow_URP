@@ -14,19 +14,30 @@ public class SongControlSystem : MonoBehaviour
     bool songPlayed = false;
     bool scoreShowed = false;
 
+    Vector3 leftPosition = new Vector3(0, 0, -0.35f);
+    Vector3 rightPosition = new Vector3(0, 0, 0.35f);
+
     int index = 0;
     string[][] timeLineData;
     int numberOfLine;
 
+    [Header("SongDetect")]
     public GameObject startButton;
     public GameObject songHintSakura_Blue;
     public GameObject songHintSakura_Pink;
     public GameObject waveDetect;
 
+    [Header("NPC Animation")]
+    public GameObject npcController;
+    Animator[] anims;
+
+    [Header("Wwise Event")]
     public AK.Wwise.Event song;
 
     private void Start()
     {
+        anims = npcController.GetComponentsInChildren<Animator>();
+
         index = 0;
 
         TextAsset baseAsset = Resources.Load("TimeLine", typeof(TextAsset)) as TextAsset;
@@ -59,10 +70,11 @@ public class SongControlSystem : MonoBehaviour
             {
                 AkSoundEngine.StopAll();
                 score = 0;
-                song.Post(gameObject, (uint)AkCallbackType.AK_Marker, ButtonAppear);
+                song.Post(gameObject, (uint)AkCallbackType.AK_Marker, DetectAppear);
                 songPlayed = true;
             }
         }
+
         if (index == numberOfLine - 1 && !scoreShowed)
         {
             timer += Time.deltaTime;
@@ -74,22 +86,25 @@ public class SongControlSystem : MonoBehaviour
             }
         }
     }
-    public void ButtonAppear(object in_cookie, AkCallbackType in_type, object in_info)
+    public void DetectAppear(object in_cookie, AkCallbackType in_type, object in_info)
     {
         if (Convert.ToInt32(timeLineData[index][1]) == 1)
         {
             Vector3 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
             GameObject
             Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+            Hint.transform.position += leftPosition;
             Hint.transform.position += bluePosition;
             Vector3 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
             Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+            Hint.transform.position += rightPosition;
             Hint.transform.position += pinkPosition;
+
+            for (int i = 0; i < anims.Length; i++)
+            {
+                //anims[i].Play();
+            }
         }
         index++;
-    }
-    public void WaveDetectStart()
-    {
-        Instantiate(waveDetect, gameObject.transform);
     }
 }
