@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7475812118492003226}
   - component: {fileID: 5898223241591337611}
   - component: {fileID: 2619656965003479146}
-  - component: {fileID: 4353048225754677963}
   - component: {fileID: 2769262007672934101}
+  - component: {fileID: 3305894788290341067}
   m_Layer: 0
   m_Name: SongButton
   m_TagString: Untagged
@@ -84,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4353048225754677963
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7475812118492003221}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &2769262007672934101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,3 +106,16 @@ MonoBehaviour:
   excellentSpeed: 0.2
   timeState: 0
   speedState: 0
+--- !u!65 &3305894788290341067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475812118492003221}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.9999999, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0}

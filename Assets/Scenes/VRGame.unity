@@ -17288,7 +17288,7 @@ GameObject:
   - component: {fileID: 892684542}
   - component: {fileID: 892684541}
   m_Layer: 0
-  m_Name: Screen (1)
+  m_Name: Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17302,11 +17302,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892684539}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 0, z: 0}
+  m_LocalPosition: {x: 0.55, y: 0, z: 0}
   m_LocalScale: {x: 0.03, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1901564224}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &892684541
 BoxCollider:
@@ -24861,7 +24861,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323458364}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d5178a76e9c34d7469ed0fcb6acae146, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 0ae49eca592a2dd4191ed16f12af9937, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -24880,7 +24880,7 @@ VideoPlayer:
   - 1
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
@@ -24895,12 +24895,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323458364}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.897571, y: 1.5977383, z: 5.1841655}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1901564224}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1324870650
 PrefabInstance:
@@ -29549,7 +29549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1585290956}
   m_Layer: 2
-  m_Name: Scene
+  m_Name: Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34460,7 +34460,7 @@ GameObject:
   - component: {fileID: 1901564222}
   - component: {fileID: 1901564221}
   m_Layer: 0
-  m_Name: Screen
+  m_Name: ScreenBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34537,9 +34537,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901564220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.09, y: 3.98, z: 5.75}
+  m_LocalPosition: {x: -3, y: 4, z: 5.75}
   m_LocalScale: {x: 0.6, y: 6.2, z: 14.5}
   m_Children:
+  - {fileID: 1323458366}
   - {fileID: 892684540}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -35610,8 +35611,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 16.83
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
 --- !u!1001 &1939240864
 PrefabInstance:

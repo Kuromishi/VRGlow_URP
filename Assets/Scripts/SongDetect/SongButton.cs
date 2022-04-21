@@ -56,11 +56,13 @@ public class SongButton : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Saber_Main") || collision.gameObject.CompareTag("Saber_Sub"))
+        Debug.Log("111");
+        if (other.gameObject.CompareTag("Saber_Main") || other.gameObject.CompareTag("Saber_Sub"))
         {
-            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
+            Debug.Log("222");
+            Rigidbody rb = other.gameObject.GetComponentInParent<Rigidbody>();
 
             if (rb.velocity.y < 0)
             {
