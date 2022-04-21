@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 3171925}
   - component: {fileID: 3171924}
   m_Layer: 5
-  m_Name: Screen_1 (1)
+  m_Name: ScreenLine_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32100,7 +32100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.7, y: 6.8}
+  m_AnchoredPosition: {x: 17, y: 6.8}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &841702058
@@ -49713,7 +49713,7 @@ GameObject:
   - component: {fileID: 1371919098}
   - component: {fileID: 1371919097}
   m_Layer: 5
-  m_Name: Screen_2 (1)
+  m_Name: ScreenLine_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64890,6 +64890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playing: 0
+  leftPosition: {x: 0, y: 0, z: -0.35}
+  rightPosition: {x: 0, y: 0, z: 0.35}
   startButton: {fileID: 0}
   songHintSakura_Blue: {fileID: 0}
   songHintSakura_Pink: {fileID: 0}
@@ -70486,8 +70488,16 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2995799007608674704, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].time
-      value: 0.9
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995799007608674704, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].value
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995799007608674704, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[3].value
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 8927004741537974250, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
       propertyPath: m_Name
