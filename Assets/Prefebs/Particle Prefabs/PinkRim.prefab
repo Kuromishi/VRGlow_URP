@@ -10795,7 +10795,7 @@ ParticleSystem:
           inWeight: 0.25142208
           outWeight: 0.17805299
         - serializedVersion: 3
-          time: 0.9
+          time: 0.95
           value: 0.37
           inSlope: 0.028305635
           outSlope: 0.028305635
