@@ -674,16 +674,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51171991}
   m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 0, y: 0, z: 54.4}
-  m_LocalScale: {x: 0.18156055, y: 0.08989162, z: 0.21835843}
+  m_LocalPosition: {x: 0, y: 0, z: 56}
+  m_LocalScale: {x: 0.15, y: 0.09, z: 0.22}
   m_Children: []
   m_Father: {fileID: 1079522249}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -246.3, y: 52.3}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -203, y: 52}
+  m_SizeDelta: {x: 1.300003, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &51171993
 MonoBehaviour:
@@ -23138,7 +23138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -364.2, y: -8.4}
+  m_AnchoredPosition: {x: -321.55, y: -8.4}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &580270396
@@ -40763,7 +40763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -289, y: -17}
+  m_AnchoredPosition: {x: -246.34998, y: -17}
   m_SizeDelta: {x: 270, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1076291882
@@ -55608,16 +55608,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462097652}
   m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 0, y: 0, z: 6.7}
-  m_LocalScale: {x: 0.18156055, y: 0.08989162, z: 0.21835843}
+  m_LocalPosition: {x: 0, y: 0, z: 8.3}
+  m_LocalScale: {x: 0.15, y: 0.09, z: 0.22}
   m_Children: []
   m_Father: {fileID: 1079522249}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -246.8, y: -9.799988}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -203.25, y: -7.950012}
+  m_SizeDelta: {x: 1.800003, y: 0.099983215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1462097654
 MonoBehaviour:
@@ -63948,7 +63948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -364.2, y: 51.5}
+  m_AnchoredPosition: {x: -321.55, y: 51.5}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706844075
@@ -64742,6 +64742,7 @@ MonoBehaviour:
   songHintSakura_Blue: {fileID: 0}
   songHintSakura_Pink: {fileID: 0}
   waveDetect: {fileID: 0}
+  npcController: {fileID: 0}
   song:
     idInternal: 0
     valueGuidInternal: 
