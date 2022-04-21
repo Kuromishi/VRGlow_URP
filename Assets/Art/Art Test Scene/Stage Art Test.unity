@@ -70487,18 +70487,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 2995799007608674704, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995799007608674704, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].value
-      value: 0.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 2995799007608674704, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[3].value
-      value: 0.37
-      objectReference: {fileID: 0}
     - target: {fileID: 8927004741537974250, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
       propertyPath: m_Name
       value: PinkRim

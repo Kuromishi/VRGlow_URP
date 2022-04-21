@@ -10021,7 +10021,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.15
+      scalar: 1.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -10796,7 +10796,7 @@ ParticleSystem:
           outWeight: 0.17805299
         - serializedVersion: 3
           time: 0.9
-          value: 0.47
+          value: 0.37
           inSlope: 0.028305635
           outSlope: 0.028305635
           tangentMode: 0
@@ -10805,7 +10805,7 @@ ParticleSystem:
           outWeight: 0.7287436
         - serializedVersion: 3
           time: 1
-          value: 0.47
+          value: 0.37
           inSlope: -0.028330281
           outSlope: -0.028330281
           tangentMode: 0
@@ -19532,6 +19532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a29e579bfd717948881cae62f8e810d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hintType: 0
   songButton: {fileID: 7475812118492003221, guid: 95a36bae98b5c5345b00ba949a3bc952, type: 3}
 --- !u!198 &3583393960413306198
 ParticleSystem:
