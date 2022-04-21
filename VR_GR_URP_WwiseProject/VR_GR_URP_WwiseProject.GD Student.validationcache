@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
 	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\VR_GR_URP_WwiseProject.wproj" DateLow="1649733443" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\VR_GR_URP_WwiseProject.GD Student.wsettings" DateLow="1650470748" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\VR_GR_URP_WwiseProject.GD Student.wsettings" DateLow="1650472648" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1649733443" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1649733443" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1649733443" DateHigh="0"/>
@@ -27,5 +27,5 @@
 	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1649733442" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1649733442" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1649733442" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1650470739" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1650504627" DateHigh="0"/>
 </ValidationCache>
