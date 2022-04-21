@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SongButtonHintSakura : MonoBehaviour
 {
+    public int hintType;
+    //0 = blue; 1 = pink
     public GameObject songButton;
     float timer = 0;
     bool buttonSpawned = false;
@@ -14,6 +16,14 @@ public class SongButtonHintSakura : MonoBehaviour
         {
             GameObject button = Instantiate(songButton, transform.parent.transform);
             button.transform.position = transform.position;
+            if (hintType == 0)
+            {
+                button.GetComponent<SongButton>().boomType = 0;
+            }
+            else
+            {
+                button.GetComponent<SongButton>().boomType = 1;
+            }
             buttonSpawned = true;
         }
     }

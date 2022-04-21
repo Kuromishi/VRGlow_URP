@@ -110,7 +110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb02c3c760a5814a8e58c4c27d939c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boomEffect: {fileID: 3945516798012094307, guid: 0be7c6dbc7e8e944db944fcf2d749341, type: 3}
+  boomType: 0
+  boomEffectBlue: {fileID: 3945516798012094307, guid: 81e0f8edcd1715c49a27a1017d2ad136, type: 3}
+  boomEffectPink: {fileID: 3945516798012094307, guid: 0be7c6dbc7e8e944db944fcf2d749341, type: 3}
   goodTimeSeconds: 0.1
   excellentTimeSeconds: 0.15
   perfectTimeSeconds: 0.5

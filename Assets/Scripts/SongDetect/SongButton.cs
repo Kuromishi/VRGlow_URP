@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class SongButton : MonoBehaviour
 {
-    public GameObject boomEffect;
+    public int boomType;
+    //0 = blue; 1 = pink
+    public GameObject boomEffectBlue;
+    public GameObject boomEffectPink;
 
     float timer = 0;
 
@@ -24,7 +27,7 @@ public class SongButton : MonoBehaviour
 
         if (timer < goodTimeSeconds)
         {
-            timeState = State.perfect;
+            timeState = State.good;
         }
 
         else if (timer >= goodTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds)
@@ -34,12 +37,12 @@ public class SongButton : MonoBehaviour
 
         else if (timer >= goodTimeSeconds + excellentTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds)
         {
-            timeState = State.good;
+            timeState = State.perfect;
         }
 
         else if (timer >= goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds)
         {
-            timeState = State.good;
+            timeState = State.excellent;
         }
 
         else if (timer >= goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds && timer < goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds)
@@ -55,7 +58,7 @@ public class SongButton : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Saber_Main" || collision.gameObject.tag == "Saber_Sub")
+        if (collision.gameObject.CompareTag("Saber_Main") || collision.gameObject.CompareTag("Saber_Sub"))
         {
             Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
 
@@ -75,27 +78,35 @@ public class SongButton : MonoBehaviour
                 {
                     speedState = State.excellent;
                 }
-            }
 
-            State finalState = (State)Mathf.Min((int)timeState, (int)speedState);
+                State finalState = (State)Mathf.Min((int)timeState, (int)speedState);
 
-            switch (finalState)
-            {
-                case State.good:
-                    Debug.Log("Good!");
-                    SongControlSystem.score += 1;
-                    break;
-                case State.excellent:
-                    Debug.Log("Excellent!");
-                    SongControlSystem.score += 3;
-                    break;
-                case State.perfect:
-                    Debug.Log("Perfect!");
-                    SongControlSystem.score += 5;
-                    break;
+                switch (finalState)
+                {
+                    case State.good:
+                        Debug.Log("Good!");
+                        SongControlSystem.score += 1;
+                        break;
+                    case State.excellent:
+                        Debug.Log("Excellent!");
+                        SongControlSystem.score += 3;
+                        break;
+                    case State.perfect:
+                        Debug.Log("Perfect!");
+                        SongControlSystem.score += 5;
+                        break;
+                }
+
+                if (boomType == 0)
+                {
+                    Instantiate(boomEffectBlue, transform.position, transform.rotation);
+                }
+                else
+                {
+                    Instantiate(boomEffectPink, transform.position, transform.rotation);
+                }
+                Destroy(gameObject);
             }
-            Instantiate(boomEffect, transform.position, transform.rotation);
-            Destroy(gameObject);
         }
     }
 }

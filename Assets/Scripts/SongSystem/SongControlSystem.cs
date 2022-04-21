@@ -91,15 +91,19 @@ public class SongControlSystem : MonoBehaviour
     {
         if (Convert.ToInt32(timeLineData[index][1]) == 1)
         {
+            GameObject Hint;
+
             Vector3 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-            GameObject
             Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
             Hint.transform.position += leftPosition;
             Hint.transform.position += bluePosition;
+            Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
+
             Vector3 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
             Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
             Hint.transform.position += rightPosition;
             Hint.transform.position += pinkPosition;
+            Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
 
             for (int i = 0; i < anims.Length; i++)
             {
