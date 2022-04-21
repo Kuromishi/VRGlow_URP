@@ -14,8 +14,9 @@ public class SongControlSystem : MonoBehaviour
     bool songPlayed = false;
     bool scoreShowed = false;
 
-    Vector3 leftPosition = new Vector3(0, 0, -0.35f);
-    Vector3 rightPosition = new Vector3(0, 0, 0.35f);
+    [Header("SongDetectOriginPosition")]
+    public Vector3 leftPosition;
+    public Vector3 rightPosition;
 
     int index = 0;
     string[][] timeLineData;

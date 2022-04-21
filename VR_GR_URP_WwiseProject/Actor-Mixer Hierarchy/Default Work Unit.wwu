@@ -4,6 +4,19 @@
 		<WorkUnit Name="Default Work Unit" ID="{FF9123D7-D811-4670-A81F-4608E9B7C09C}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Song" ID="{41ADCB17-130C-429E-92EA-61045C25E965}" ShortID="666932098">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{08163AC6-6849-4FE7-AA17-77DD0D9A0D5F}"/>

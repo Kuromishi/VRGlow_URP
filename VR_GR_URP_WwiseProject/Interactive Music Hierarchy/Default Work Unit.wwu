@@ -17,6 +17,19 @@
 					</ReferenceList>
 					<ChildrenList>
 						<MusicTrack Name="一途な失恋を表現した楽曲" ID="{C8D28520-209C-4BDC-9B0D-4C2ADA4C6F2D}" ShortID="272340273">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6C29405-D926-4985-94D1-7395ECABE4A4}"/>
@@ -39,7 +52,6 @@
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
-									<ReferenceList/>
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
