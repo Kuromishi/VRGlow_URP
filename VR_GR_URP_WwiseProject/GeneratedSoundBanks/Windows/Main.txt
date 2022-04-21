@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	251043389	Play_Song			\Default Work Unit\Play_Song	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	416915846	Song	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Windows\SFX\一途な失恋を表現した楽曲_F0FF8D34.wem		\Actor-Mixer Hierarchy\Default Work Unit\Song		37415456
+	416915846	Song	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Windows\SFX\一途な失恋を表現した楽曲_8E003979.wem		\Actor-Mixer Hierarchy\Default Work Unit\Song		37415456
 
