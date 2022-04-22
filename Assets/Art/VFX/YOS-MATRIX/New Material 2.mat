@@ -92,7 +92,7 @@ Material:
     m_Colors:
     - Color_5FBE2EF7: {r: 10.916392, g: 0, b: 27.708284, a: 0}
     - Color_7C16A9AD: {r: 0, g: 0, b: 0, a: 0}
-    - Vector4_6372457F: {r: 0, g: 0.2, b: 1, a: 3}
+    - Vector4_6372457F: {r: 0, g: 0.01, b: 1, a: 3}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
