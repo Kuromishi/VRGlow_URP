@@ -45,11 +45,11 @@ public class Eye : MonoBehaviour
     private bool isInview(Vector3 worldPos)
     {
         Transform camTransform = Camera.main.transform;
-        Vector2 viewPos = Camera.main.WorldToViewportPoint(worldPos);
+        Vector3 viewPos = Camera.main.WorldToViewportPoint(worldPos);
         Vector3 dir = (worldPos - camTransform.position).normalized;
         float dot = Vector3.Dot(camTransform.forward, dir);
 
-        if (dot > 0 && viewPos.x >= 0 && viewPos.x <= 1 && viewPos.y >= 0 && viewPos.y <= 1) return isWatching = false;
+        if (dot > 0 && viewPos.z >= 0 && viewPos.z <= 1 && viewPos.y >= 0 && viewPos.y <= 1) return isWatching = false;
         else return isWatching = true;
     }
 }

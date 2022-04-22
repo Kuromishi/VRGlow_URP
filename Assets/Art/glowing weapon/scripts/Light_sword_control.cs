@@ -45,7 +45,7 @@ public class Light_sword_control : MonoBehaviour
         //this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial = mat;
 
         //this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial.SetColor("_EmissionColor", color);
-      
+        if (this.game_obj_slash.GetComponent<ParticleSystemRenderer>() == null) return;
         this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial = Instantiate(this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial);
         this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial.SetColor("_EmissionColor", this.color_sword);
 

@@ -89,7 +89,7 @@ public class SongControlSystem : MonoBehaviour
     }
     public void DetectAppear(object in_cookie, AkCallbackType in_type, object in_info)
     {
-        if (Convert.ToInt32(timeLineData[index][1]) == 1)
+        if (Convert.ToInt32(timeLineData[index][1]) == 1 || Convert.ToInt32(timeLineData[index][1]) == 2 || Convert.ToInt32(timeLineData[index][1]) == 4 || Convert.ToInt32(timeLineData[index][1]) == 5)
         {
             GameObject Hint;
 
@@ -109,6 +109,10 @@ public class SongControlSystem : MonoBehaviour
             {
                 //anims[i].Play();
             }
+        }
+        else if (Convert.ToInt32(timeLineData[index][1]) == 3)
+        {
+            Instantiate(waveDetect, gameObject.transform);
         }
         index++;
     }

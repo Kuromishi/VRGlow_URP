@@ -4,90 +4,55 @@ using UnityEngine;
 
 public class WaveDetect : MonoBehaviour
 {
-    MeshRenderer mr;
+    float timer = 0;
+    bool detected = false;
 
-    Vector3 saberPosition;
-    Vector3 startPosition;
-    Vector3 endPosition;
+    float saberSpeed;
 
-    Vector3 moveVector;
+    Animator anim;
+
+    public GameObject effect;
 
     public float goodLength;
     public float excellentLength;
-
     private void Start()
     {
-        mr = GetComponent<MeshRenderer>();
+        anim = GetComponent<Animator>();
+        anim.Play("WaveIntro");
+    }
+    private void FixedUpdate()
+    {
+        timer += Time.deltaTime;
+        if (timer >= 1.75f && !detected)
+        {
+            detected = true;
+            if (saberSpeed != 0f)
+            {
+                Debug.Log("Wave Good!");
+                Instantiate(effect, gameObject.transform);
+            }
+            else
+            {
+                Debug.Log("Wave Bad!");
+            }
+        }
+        else if (timer >= 5f)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Saber_Main"))
         {
-            saberPosition = other.transform.position;
+            saberSpeed = other.gameObject.transform.parent.GetComponent<Rigidbody>().velocity.magnitude;
         }
     }
-    void StartDetect_Left()
+    private void OnTriggerExit(Collider other)
     {
-        startPosition = saberPosition;
-    }
-    void EndDetect_Left()
-    {
-        endPosition = saberPosition;
-        moveVector = endPosition - startPosition;
-        if (moveVector.z < 0)
+        if (other.gameObject.CompareTag("Saber_Main"))
         {
-            if (Mathf.Abs(moveVector.z) < goodLength)
-            {
-                Debug.Log("Good!");
-            }
-            else if(Mathf.Abs(moveVector.z) < excellentLength)
-            {
-                Debug.Log("Excellent!");
-            }
-            else
-            {
-                Debug.Log("Perfect!");
-            }
+            saberSpeed = 0f;
         }
-        else
-        {
-            Debug.Log("Missed!");
-        }
-    }
-    void StartDetect_Right()
-    {
-        startPosition = saberPosition;
-    }
-    void EndDetect_Right()
-    {
-        endPosition = saberPosition;
-        moveVector = endPosition - startPosition;
-        if (moveVector.z > 0)
-        {
-            if (Mathf.Abs(moveVector.z) < goodLength)
-            {
-                Debug.Log("Good!");
-            }
-            else if (Mathf.Abs(moveVector.z) < excellentLength)
-            {
-                Debug.Log("Excellent!");
-            }
-            else
-            {
-                Debug.Log("Perfect!");
-            }
-        }
-        else
-        {
-            Debug.Log("Missed!");
-        }
-    }
-    void StartHint()
-    {
-
-    }
-    void EndWave()
-    {
-        Destroy(gameObject);
     }
 }
