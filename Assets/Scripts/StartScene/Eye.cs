@@ -5,27 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Eye : MonoBehaviour
 {
-    private bool isWatching;
     private float zeroTimer;
     public float timer;
     private Vector3 cube;
 
-    //void OnBecameVisible()
-    //{
-    //    isWatching = true;
-    //    Debug.Log(isWatching);
-    //}
-    //void OnBecameInvisible()
-    //{
-    //    isWatching = false;
-    //    Debug.Log(isWatching);
-    //}
-
     private void FixedUpdate()
     {
-        isInview(cube);
-
-        if (isWatching)
+        if (isInview(cube))
         {
             zeroTimer += Time.deltaTime;
             if (zeroTimer >= timer)
@@ -34,22 +20,20 @@ public class Eye : MonoBehaviour
             }
         }
 
-        if (!isWatching)
+        if (!isInview(cube))
         {
             zeroTimer = 0;
         }
-
-        //Debug.Log(zeroTimer);
     }
 
     private bool isInview(Vector3 worldPos)
     {
         Transform camTransform = Camera.main.transform;
-        Vector3 viewPos = Camera.main.WorldToViewportPoint(worldPos);
+        Vector2 viewPos = Camera.main.WorldToViewportPoint(worldPos);
         Vector3 dir = (worldPos - camTransform.position).normalized;
         float dot = Vector3.Dot(camTransform.forward, dir);
 
-        if (dot > 0 && viewPos.z >= 0 && viewPos.z <= 1 && viewPos.y >= 0 && viewPos.y <= 1) return isWatching = false;
-        else return isWatching = true;
+        if (dot > 0 && viewPos.x >= 0 && viewPos.x <= 1 && viewPos.y >= 0 && viewPos.y <= 1) return true;
+        else return false;
     }
 }
