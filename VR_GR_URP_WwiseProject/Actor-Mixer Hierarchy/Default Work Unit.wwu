@@ -82,7 +82,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{1CAB858E-3C31-47FD-A9FF-617DD2DB1279}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="3,0,0,0,0,0,0"/>
+											<Property Name="Label" Type="string" Value="2.5,0,0,0,0,0,0"/>
 											<Property Name="Time" Type="Real64" Value="4.2614"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -106,7 +106,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{8594EDE9-87DB-4636-964D-FE5606CB11C4}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="3,0,0,0,0,0,0"/>
+											<Property Name="Label" Type="string" Value="3.5,0,0,0,0,0,0"/>
 											<Property Name="Time" Type="Real64" Value="6.483"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -130,7 +130,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{653BD543-47DC-49B1-B5FC-FE80EC0728E7}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="3,0,0,0,0,0,0"/>
+											<Property Name="Label" Type="string" Value="3.5,0,0,0,0,0,0"/>
 											<Property Name="Time" Type="Real64" Value="8.7046"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -154,7 +154,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{0697FDDF-6D63-4EEF-8725-3553675A366F}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="3,0,0,0,0,0,0"/>
+											<Property Name="Label" Type="string" Value="3.5,0,0,0,0,0,0"/>
 											<Property Name="Time" Type="Real64" Value="10.9262"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -178,7 +178,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{90909EF7-F83D-4065-AB33-6CE265015AF9}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="3,0,0,0,0,0,0"/>
+											<Property Name="Label" Type="string" Value="3.5,0,0,0,0,0,0"/>
 											<Property Name="Time" Type="Real64" Value="13.1478"/>
 										</PropertyList>
 									</PluginInnerObject>
@@ -202,7 +202,7 @@
 									</PluginInnerObject>
 									<PluginInnerObject Name="" ID="{8A1DDA2F-4F1F-43F7-BA2F-5C11B35A6D8A}" PluginName="Marker" CompanyID="0" PluginID="993">
 										<PropertyList>
-											<Property Name="Label" Type="string" Value="3,0,0,0,0,0,0"/>
+											<Property Name="Label" Type="string" Value="3.5,0,0,0,0,0,0"/>
 											<Property Name="Time" Type="Real64" Value="15.3694"/>
 										</PropertyList>
 									</PluginInnerObject>

@@ -6,6 +6,7 @@ public class WaveDetect : MonoBehaviour
 {
     float timer = 0;
     bool detected = false;
+    public bool needHint;
 
     float saberSpeed;
 
@@ -18,17 +19,21 @@ public class WaveDetect : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
-        anim.Play("WaveIntro");
+        if (needHint == true)
+        {
+            anim.Play("WaveIntro");
+        }
     }
     private void FixedUpdate()
     {
         timer += Time.deltaTime;
-        if (timer >= 1.75f && !detected)
+        if (timer >= 2.05f && !detected)
         {
             detected = true;
             if (saberSpeed != 0f)
             {
                 Debug.Log("Wave Good!");
+                Debug.Log(saberSpeed);
                 Instantiate(effect, gameObject.transform);
             }
             else
@@ -36,7 +41,7 @@ public class WaveDetect : MonoBehaviour
                 Debug.Log("Wave Bad!");
             }
         }
-        else if (timer >= 5f)
+        else if (timer >= 2.5f)
         {
             Destroy(gameObject);
         }

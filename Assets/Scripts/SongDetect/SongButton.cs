@@ -58,10 +58,8 @@ public class SongButton : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("111");
         if (other.gameObject.CompareTag("Saber_Main") || other.gameObject.CompareTag("Saber_Sub"))
         {
-            Debug.Log("222");
             Rigidbody rb = other.gameObject.GetComponentInParent<Rigidbody>();
 
             if (rb.velocity.y < 0)
