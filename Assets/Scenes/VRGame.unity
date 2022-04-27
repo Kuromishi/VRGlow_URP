@@ -3746,7 +3746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6882424707860078929, guid: 8be23f8f78abb5f418efe747b9b91897, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6882424707860078929, guid: 8be23f8f78abb5f418efe747b9b91897, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11641,7 +11641,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1965803035}
   - {fileID: 186864999}
   - {fileID: 894305871}
   - {fileID: 566871418}
@@ -11681,6 +11680,7 @@ Transform:
   - {fileID: 1436908371}
   - {fileID: 303828045}
   - {fileID: 1933682001}
+  - {fileID: 1965803035}
   - {fileID: 57504175}
   - {fileID: 1672608726}
   - {fileID: 1260641716}
@@ -44077,6 +44077,10 @@ PrefabInstance:
     - target: {fileID: 4448226154451451950, guid: ca5497fcee443414cbc039961521a3e4, type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448226154451451950, guid: ca5497fcee443414cbc039961521a3e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4448226154451451950, guid: ca5497fcee443414cbc039961521a3e4, type: 3}
       propertyPath: m_StaticEditorFlags

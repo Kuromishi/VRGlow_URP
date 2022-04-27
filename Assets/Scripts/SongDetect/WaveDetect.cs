@@ -5,7 +5,6 @@ using UnityEngine;
 public class WaveDetect : MonoBehaviour
 {
     float timer = 0;
-    bool detected = false;
     public bool needHint;
 
     float saberSpeed;
@@ -27,22 +26,19 @@ public class WaveDetect : MonoBehaviour
     private void FixedUpdate()
     {
         timer += Time.deltaTime;
-        if (timer >= 2.05f && !detected)
+        if (timer >= 2.05f)
         {
-            detected = true;
             if (saberSpeed != 0f)
             {
                 Debug.Log("Wave Good!");
                 Debug.Log(saberSpeed);
-                Instantiate(effect, gameObject.transform);
-            }
-            else
-            {
-                Debug.Log("Wave Bad!");
+                Instantiate(effect, gameObject.transform.parent);
+                Destroy(gameObject);
             }
         }
-        else if (timer >= 2.5f)
+        else if (timer >= 3f)
         {
+            Debug.Log("Wave Bad!");
             Destroy(gameObject);
         }
     }

@@ -205,6 +205,7 @@ public class SongControlSystem : MonoBehaviour
         {
             anims[i].Play("IdleToWave");
         }
+        Debug.Log("111");
     }
     public void AnimWave()
     {
@@ -212,5 +213,6 @@ public class SongControlSystem : MonoBehaviour
         {
             anims[i].Play("Wave_ShirtGuy02");
         }
+        Debug.Log("111");
     }
 }
