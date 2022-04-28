@@ -38,17 +38,11 @@ public class Light_sword_control : MonoBehaviour
         float factor = Mathf.Pow(2, -0.85f);
         Color color = new Color(color_sword.r * factor, color_sword.g * factor, color_sword.b * factor);
 
-
-        //Material mat = new Material(GetComponent<ParticleSystemRenderer>().trailMaterial.shader);
-        //mat = game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial;
-        //mat.SetColor("_EmissionColor", color);
-        //this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial = mat;
-
-        //this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial.SetColor("_EmissionColor", color);
-        if (this.game_obj_slash.GetComponent<ParticleSystemRenderer>() == null) return;
-        this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial = Instantiate(this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial);
-        this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial.SetColor("_EmissionColor", this.color_sword);
-
+        if (this.game_obj_slash != null)
+        {
+            this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial = Instantiate(this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial);
+            this.game_obj_slash.GetComponent<ParticleSystemRenderer>().trailMaterial.SetColor("_EmissionColor", this.color_sword);
+        }
     }
 
     // Update is called once per frame
