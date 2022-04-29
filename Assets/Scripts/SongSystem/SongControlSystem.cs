@@ -248,4 +248,11 @@ public class SongControlSystem : MonoBehaviour
             anims[i].Play("Wave_ShirtGuy02");
         }
     }
+    public void AnimUpDraft()
+    {
+        for (int i = 0; i < anims.Length; i++)
+        {
+            anims[i].Play("UpDraft_ShirtGuy02");
+        }
+    }
 }
