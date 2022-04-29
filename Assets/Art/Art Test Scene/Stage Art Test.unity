@@ -30122,6 +30122,7 @@ MonoBehaviour:
   songHintSakura_Blue: {fileID: 0}
   songHintSakura_Pink: {fileID: 0}
   waveDetect: {fileID: 0}
+  upDraft: {fileID: 0}
   npcController: {fileID: 0}
   song:
     idInternal: 0
@@ -37962,6 +37963,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 741716878662590984, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924891467691387899, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924891468264494707, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924891468644940731, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924891468779581939, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924891469388820647, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5924891469781419584, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
       propertyPath: m_Name
       value: Load
@@ -38009,6 +38034,14 @@ PrefabInstance:
     - target: {fileID: 5924891469781419597, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924891469801984327, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876157923569833395, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
