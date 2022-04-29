@@ -33972,6 +33972,7 @@ MonoBehaviour:
   songHintSakura_Blue: {fileID: 5423692045830140283, guid: d5cdf0287fd83d64c82a0b4383761fc5, type: 3}
   songHintSakura_Pink: {fileID: 8927004741537974250, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
   waveDetect: {fileID: 12406724322403978, guid: c0ab83cc6661ae9439095030bff368a6, type: 3}
+  upDraft: {fileID: 5924891469781419584, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
   npcController: {fileID: 641871390}
   song:
     idInternal: 0
