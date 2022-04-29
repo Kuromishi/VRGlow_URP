@@ -139,7 +139,7 @@ public class SongControlSystem : MonoBehaviour
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
 
-                Invoke("AnimLiDa2", 1);
+                Invoke("AnimGaoDa", 0.67f);
 
                 break;
 
@@ -220,14 +220,14 @@ public class SongControlSystem : MonoBehaviour
         }
         index++;
     }
-    public void AnimLiDa2()
+    public void AnimLiDa2()//平敲
     {
         for (int i = 0; i < anims.Length; i++)
         {
             anims[i].Play("LiDa2_whole");
         }
     }
-    public void AnimWaveStart()
+    public void AnimWaveStart()//wave
     {
         for (int i = 0; i < anims.Length; i++)
         {
@@ -241,14 +241,14 @@ public class SongControlSystem : MonoBehaviour
             anims[i].Play("Wave_ShirtGuy02");
         }
     }
-    public void AnimGaoDa()
+    public void AnimGaoDa()//高打
     {
         for (int i = 0; i < anims.Length; i++)
         {
-            anims[i].Play("Wave_ShirtGuy02");
+            anims[i].Play("Whole_GaoDa");
         }
     }
-    public void AnimUpDraft()
+    public void AnimUpDraft()//上升气流
     {
         for (int i = 0; i < anims.Length; i++)
         {
