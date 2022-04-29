@@ -46,7 +46,7 @@ public class WaveDetect : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Saber_Main"))
         {
-            saberSpeed = other.gameObject.transform.parent.GetComponent<Rigidbody>().velocity.magnitude;
+            saberSpeed = other.gameObject.transform.parent.GetComponentInParent<Rigidbody>().velocity.magnitude;
         }
     }
     private void OnTriggerExit(Collider other)
