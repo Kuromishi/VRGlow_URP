@@ -8,7 +8,7 @@ public class UpDraftHitBox : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 2f)
+        if (timer >= 1f)
         {
             Destroy(gameObject);
         }

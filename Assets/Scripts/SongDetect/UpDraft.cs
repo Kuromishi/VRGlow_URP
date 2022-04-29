@@ -48,22 +48,22 @@ public class UpDraft : MonoBehaviour
             hitBoxStartActivated = true;
             GetComponent<CapsuleCollider>().enabled = true;
         }
-        else if (timer >= 1.75f && !hitBoxOneActivated)
+        else if (timer >= 1.8f && !hitBoxOneActivated)
         {
             hitBox_Sub_1.SetActive(true);
             hitBoxOneActivated = true;
         }
-        else if (timer >= 2.25f && !hitBoxTwoActivated)
+        else if (timer >= 2.35f && !hitBoxTwoActivated)
         {
             hitBox_Sub_2.SetActive(true);
             hitBoxTwoActivated = true;
         }
-        else if (timer >= 2.75f && !hitBoxEndActivated)
+        else if (timer >= 2.9f && !hitBoxEndActivated)
         {
             hitBox_End.SetActive(true);
             hitBoxEndActivated = true;
         }
-        else if (timer >= 3.5f)
+        else if (timer >= 4f)
         {
             SongControlSystem.score += score;
         }
@@ -72,8 +72,11 @@ public class UpDraft : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Saber_Main") || other.gameObject.CompareTag("Saber_Sub"))
         {
-            isDrafting = true;
-            draftPosition = other.gameObject.transform.position;
+            if(other.gameObject.GetComponentInParent<Rigidbody>().velocity.y >= 0)
+            {
+                isDrafting = true;
+                draftPosition = other.gameObject.transform.position;
+            }
         }
     }
     private void OnTriggerExit(Collider other)

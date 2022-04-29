@@ -41,6 +41,7 @@ public class SongControlSystem : MonoBehaviour
     public GameObject songHintSakura_Blue;
     public GameObject songHintSakura_Pink;
     public GameObject waveDetect;
+    public GameObject upDraft;
 
     [Header("NPC Animation")]
     public GameObject npcController;
@@ -189,6 +190,20 @@ public class SongControlSystem : MonoBehaviour
                 Invoke("AnimLiDa2", 1);
 
                 break;
+            case 6:
+                bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
+                Hint = Instantiate(upDraft, gameObject.transform);
+                Hint.transform.position += leftPosition;
+                Hint.transform.position += bluePosition;
+
+                pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
+                Hint = Instantiate(upDraft, gameObject.transform);
+                Hint.transform.position += rightPosition;
+                Hint.transform.position += pinkPosition;
+
+                Invoke("AnimLiDa2", 1);
+
+                break;
         }
         index++;
     }
@@ -205,7 +220,6 @@ public class SongControlSystem : MonoBehaviour
         {
             anims[i].Play("IdleToWave");
         }
-        Debug.Log("111");
     }
     public void AnimWave()
     {
@@ -213,6 +227,5 @@ public class SongControlSystem : MonoBehaviour
         {
             anims[i].Play("Wave_ShirtGuy02");
         }
-        Debug.Log("111");
     }
 }
