@@ -46,7 +46,6 @@ public class UpDraft : MonoBehaviour
         {
             hitBox_Start.SetActive(true);
             hitBoxStartActivated = true;
-            GetComponent<CapsuleCollider>().enabled = true;
         }
         else if (timer >= 1.8f && !hitBoxOneActivated)
         {

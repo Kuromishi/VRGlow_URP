@@ -5268,7 +5268,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1
+    scalar: 1.1
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -29532,7 +29532,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0.5
+    scalar: 0.55
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -39209,7 +39209,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1.5
+    scalar: 1.65
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -48796,8 +48796,8 @@ CapsuleCollider:
   m_GameObject: {fileID: 5924891469781419584}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
-  m_Radius: 0.075
+  m_Enabled: 1
+  m_Radius: 0.1
   m_Height: 1
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.1}
