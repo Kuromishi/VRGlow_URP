@@ -42,22 +42,22 @@ public class UpDraft : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        if(timer >= 1.25f && !hitBoxStartActivated)
+        if(timer >= 1.0f && !hitBoxStartActivated)
         {
             hitBox_Start.SetActive(true);
             hitBoxStartActivated = true;
         }
-        else if (timer >= 1.8f && !hitBoxOneActivated)
+        else if (timer >= 1.55f && !hitBoxOneActivated)
         {
             hitBox_Sub_1.SetActive(true);
             hitBoxOneActivated = true;
         }
-        else if (timer >= 2.35f && !hitBoxTwoActivated)
+        else if (timer >= 2.1f && !hitBoxTwoActivated)
         {
             hitBox_Sub_2.SetActive(true);
             hitBoxTwoActivated = true;
         }
-        else if (timer >= 2.9f && !hitBoxEndActivated)
+        else if (timer >= 2.65f && !hitBoxEndActivated)
         {
             hitBox_End.SetActive(true);
             hitBoxEndActivated = true;

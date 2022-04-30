@@ -23,17 +23,16 @@ public class SongControlSystem : MonoBehaviour
     int numberOfLine;
     //时间轴标记：
     //0：none；
-    //1：平敲；
-    //2：上敲；
+    //1：平敲；1.1:仅左侧；1.2：仅右侧
+    //2：上敲；2.1:仅左侧；2.2：仅右侧
     //2.5：wave起手；
     //3：wave；
     //3.5：wave(仅判定，无动画)；
-    //4：里跳低敲；
-    //5：里跳高敲；
-    //6：上升气流；
-    //7：左右上滑；
+    //4：里跳低敲；4.1:仅左侧；4.2：仅右侧
+    //5：里跳高敲；5.1:仅左侧；5.2：仅右侧
+    //6：上升气流；6.1:仅左侧；6.2：仅右侧
     //8：画心；
-    //9：敲三下；
+    //9：敲三下（起手）；9.1：仅出现判定点，用于三连敲的第二、三下
     //10：欢呼；
 
     [Header("SongDetect")]
@@ -125,6 +124,31 @@ public class SongControlSystem : MonoBehaviour
 
                 break;
 
+            case 1.1f:
+                //whole li da 2
+                bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
+                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                Hint.transform.position += leftPosition;
+                Hint.transform.position += bluePosition;
+                Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
+
+                Invoke("AnimLiDa2", 1);
+
+                break;
+
+            case 1.2f:
+                //whole li da 2
+                pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
+                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                Hint.transform.position += rightPosition;
+                Hint.transform.position += pinkPosition;
+                Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
+
+                Invoke("AnimLiDa2", 1);
+
+                break;
+
+
             case 2:
                 //whole gao da
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
@@ -139,7 +163,31 @@ public class SongControlSystem : MonoBehaviour
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
 
-                Invoke("AnimGaoDa", 0.67f);
+                Invoke("AnimGaoDa", 0.92f);
+
+                break;
+
+            case 2.1f:
+                //whole gao da
+                bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
+                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                Hint.transform.position += leftPosition;
+                Hint.transform.position += bluePosition;
+                Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
+
+                Invoke("AnimGaoDa", 0.92f);
+
+                break;
+
+            case 2.2f:
+                //whole gao da
+                pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
+                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                Hint.transform.position += rightPosition;
+                Hint.transform.position += pinkPosition;
+                Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
+
+                Invoke("AnimGaoDa", 0.92f);
 
                 break;
 
@@ -157,13 +205,14 @@ public class SongControlSystem : MonoBehaviour
                 Hint = Instantiate(waveDetect, gameObject.transform);
                 Hint.GetComponent<WaveDetect>().needHint = false;
 
-                Invoke("AnimWave", 1.5f);
-
                 break;
 
             case 3.5f:
                 Hint = Instantiate(waveDetect, gameObject.transform);
-                Hint.GetComponent<WaveDetect>().needHint = false;
+                Hint.GetComponent<WaveDetect>().needHint = true;
+
+                Invoke("AnimWave", 1.5f);
+
                 break;
 
             case 4:
@@ -180,7 +229,31 @@ public class SongControlSystem : MonoBehaviour
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
 
-                Invoke("AnimLiDa2", 1);
+                Invoke("AnimLiDa", 1.13f);
+
+                break;
+
+            case 4.1f:
+                //Whole_LiDa2
+                bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
+                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                Hint.transform.position += leftPosition;
+                Hint.transform.position += bluePosition;
+                Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
+
+                Invoke("AnimLiDa", 1.13f);
+
+                break;
+
+            case 4.2f:
+                //Whole_LiDa2
+                pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
+                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                Hint.transform.position += rightPosition;
+                Hint.transform.position += pinkPosition;
+                Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
+
+                Invoke("AnimLiDa", 1.13f);
 
                 break;
 
@@ -198,7 +271,25 @@ public class SongControlSystem : MonoBehaviour
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
 
-                Invoke("AnimLiDa2", 1);
+                break;
+
+            case 5.1f:
+                //Whole_GaoDa
+                bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
+                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                Hint.transform.position += leftPosition;
+                Hint.transform.position += bluePosition;
+                Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
+
+                break;
+
+            case 5.2f:
+                //Whole_GaoDa
+                pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
+                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                Hint.transform.position += rightPosition;
+                Hint.transform.position += pinkPosition;
+                Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
 
                 break;
 
@@ -214,11 +305,40 @@ public class SongControlSystem : MonoBehaviour
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
 
-                Invoke("AnimLiDa2", 1);
+                Invoke("AnimUpDraft", 1.16f);
+
+                break;
+
+            case 6.1f:
+                //Whole_Updraft
+                bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
+                Hint = Instantiate(upDraft, gameObject.transform);
+                Hint.transform.position += leftPosition;
+                Hint.transform.position += bluePosition;
+
+                Invoke("AnimUpDraft", 1.16f);
+
+                break;
+
+            case 6.2f:
+                //Whole_Updraft
+                pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
+                Hint = Instantiate(upDraft, gameObject.transform);
+                Hint.transform.position += rightPosition;
+                Hint.transform.position += pinkPosition;
+
+                Invoke("AnimUpDraft", 1.16f);
 
                 break;
         }
         index++;
+    }
+    public void AnimLiDa()//里跳起手
+    {
+        for (int i = 0; i < anims.Length; i++)
+        {
+            anims[i].Play("LiDa_whole");
+        }
     }
     public void AnimLiDa2()//平敲
     {
