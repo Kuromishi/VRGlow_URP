@@ -7,7 +7,9 @@ public class SongButton : MonoBehaviour
     public int boomType;
     //0 = blue; 1 = pink
     public GameObject boomEffectBlue;
+    public GameObject boomEffectBlue_Perfect;
     public GameObject boomEffectPink;
+    public GameObject boomEffectPink_Perfect;
 
     float timer = 0;
 
@@ -100,10 +102,18 @@ public class SongButton : MonoBehaviour
                 if (boomType == 0)
                 {
                     Instantiate(boomEffectBlue, transform.position, transform.rotation);
+                    if (finalState == State.excellent)
+                    {
+                        Instantiate(boomEffectBlue_Perfect, transform.position, transform.rotation);
+                    }
                 }
                 else
                 {
                     Instantiate(boomEffectPink, transform.position, transform.rotation);
+                    if (finalState == State.excellent)
+                    {
+                        Instantiate(boomEffectPink_Perfect, transform.position, transform.rotation);
+                    }
                 }
                 Destroy(gameObject);
             }

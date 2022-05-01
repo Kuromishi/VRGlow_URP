@@ -52,11 +52,13 @@ MonoBehaviour:
   leftPosition: {x: 0, y: 0, z: -0.25}
   rightPosition: {x: 0, y: 0, z: 0.25}
   startButton: {fileID: 7475812118492003221, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
-  songHintSakura_Blue: {fileID: 5423692045830140283, guid: d5cdf0287fd83d64c82a0b4383761fc5, type: 3}
-  songHintSakura_Pink: {fileID: 8927004741537974250, guid: 91bcb38a423ae22419349b6795a91383, type: 3}
+  songHintSakura_Blue: {fileID: 224508440020013759, guid: 40271f4e397db834da2c82769705b01f, type: 3}
+  songHintSakura_Blue_Arrow: {fileID: 4607945924583548323, guid: 32535f3dee1db764795924d80c50fcab, type: 3}
+  songHintSakura_Pink: {fileID: 116335956005659194, guid: b45ea8076de414d4697d5e6fa922107f, type: 3}
+  songHintSakura_Pink_Arrow: {fileID: 4639049340451740160, guid: a4f8711342fe9d249bf2ea58241cbde5, type: 3}
   waveDetect: {fileID: 12406724322403978, guid: c0ab83cc6661ae9439095030bff368a6, type: 3}
   upDraft: {fileID: 5924891469781419584, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
-  npcController: {fileID: 0}
+  npcController: {fileID: 2432834599284696398, guid: 4fbe49597b3b56441ab495c1e58b953a, type: 3}
   song:
     idInternal: 0
     valueGuidInternal: 
