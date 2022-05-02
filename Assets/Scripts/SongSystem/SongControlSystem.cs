@@ -38,7 +38,9 @@ public class SongControlSystem : MonoBehaviour
     [Header("SongDetect")]
     public GameObject startButton;
     public GameObject songHintSakura_Blue;
+    public GameObject songHintSakura_Blue_Arrow;
     public GameObject songHintSakura_Pink;
+    public GameObject songHintSakura_Pink_Arrow;
     public GameObject waveDetect;
     public GameObject upDraft;
 
@@ -66,15 +68,19 @@ public class SongControlSystem : MonoBehaviour
         for (int i = 0 ; i < numberOfLine; i++)
         {
             timeLineData[i] = lineTimeLineData[i].Split(',');
-            //if (float.Parse(timeLineData[i][1]) == 1)
-            //{
-            //    Debug.Log(float.Parse(timeLineData[i][2]));
-            //    Debug.Log(float.Parse(timeLineData[i][3]));
-            //    Debug.Log(float.Parse(timeLineData[i][4]));
-            //    Debug.Log(float.Parse(timeLineData[i][5]));
-            //    Debug.Log(float.Parse(timeLineData[i][6]));
-            //    Debug.Log(float.Parse(timeLineData[i][7]));
-            //}
+            //Debug.Log(float.Parse(timeLineData[i][0]));
+            //Debug.Log(float.Parse(timeLineData[i][1]));
+
+            //Debug.Log(float.Parse(timeLineData[i][2]));
+            //Debug.Log(float.Parse(timeLineData[i][3]));
+            //Debug.Log(float.Parse(timeLineData[i][4]));
+
+            //Debug.Log(float.Parse(timeLineData[i][5]));
+            //Debug.Log(float.Parse(timeLineData[i][6]));
+            //Debug.Log(float.Parse(timeLineData[i][7]));
+
+            //Debug.Log(float.Parse(timeLineData[i][8]));
+            //Debug.Log(float.Parse(timeLineData[i][9]));
         }
     }
     private void FixedUpdate()
@@ -109,13 +115,31 @@ public class SongControlSystem : MonoBehaviour
             case 1:
                 //whole li da 2
                 Vector3 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                if (float.Parse(timeLineData[index][8]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3 (0, 0, float.Parse(timeLineData[index][8]));
+                    Hint = Instantiate(songHintSakura_Blue_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
 
                 Vector3 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                if (float.Parse(timeLineData[index][9]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][9]));
+                    Hint = Instantiate(songHintSakura_Pink_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
@@ -127,7 +151,16 @@ public class SongControlSystem : MonoBehaviour
             case 1.1f:
                 //whole li da 2
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                if (float.Parse(timeLineData[index][8]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][8]));
+                    Hint = Instantiate(songHintSakura_Blue_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
@@ -139,7 +172,16 @@ public class SongControlSystem : MonoBehaviour
             case 1.2f:
                 //whole li da 2
                 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                if (float.Parse(timeLineData[index][9]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][9]));
+                    Hint = Instantiate(songHintSakura_Pink_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
@@ -152,13 +194,31 @@ public class SongControlSystem : MonoBehaviour
             case 2:
                 //whole gao da
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                if (float.Parse(timeLineData[index][8]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][8]));
+                    Hint = Instantiate(songHintSakura_Blue_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
 
                 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                if (float.Parse(timeLineData[index][9]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][9]));
+                    Hint = Instantiate(songHintSakura_Pink_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
@@ -170,7 +230,16 @@ public class SongControlSystem : MonoBehaviour
             case 2.1f:
                 //whole gao da
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                if (float.Parse(timeLineData[index][8]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][8]));
+                    Hint = Instantiate(songHintSakura_Blue_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
@@ -182,7 +251,16 @@ public class SongControlSystem : MonoBehaviour
             case 2.2f:
                 //whole gao da
                 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                if (float.Parse(timeLineData[index][9]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][9]));
+                    Hint = Instantiate(songHintSakura_Pink_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
@@ -218,13 +296,31 @@ public class SongControlSystem : MonoBehaviour
             case 4:
                 //Whole_LiDa2
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                if (float.Parse(timeLineData[index][8]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][8]));
+                    Hint = Instantiate(songHintSakura_Blue_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
 
                 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                if (float.Parse(timeLineData[index][9]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][9]));
+                    Hint = Instantiate(songHintSakura_Pink_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
@@ -236,7 +332,16 @@ public class SongControlSystem : MonoBehaviour
             case 4.1f:
                 //Whole_LiDa2
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                if (float.Parse(timeLineData[index][8]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][8]));
+                    Hint = Instantiate(songHintSakura_Blue_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
@@ -248,7 +353,16 @@ public class SongControlSystem : MonoBehaviour
             case 4.2f:
                 //Whole_LiDa2
                 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                if (float.Parse(timeLineData[index][9]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][9]));
+                    Hint = Instantiate(songHintSakura_Pink_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
@@ -260,13 +374,31 @@ public class SongControlSystem : MonoBehaviour
             case 5:
                 //Whole_GaoDa
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                if (float.Parse(timeLineData[index][8]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][8]));
+                    Hint = Instantiate(songHintSakura_Blue_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
 
                 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                if (float.Parse(timeLineData[index][9]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][9]));
+                    Hint = Instantiate(songHintSakura_Pink_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
@@ -276,7 +408,16 @@ public class SongControlSystem : MonoBehaviour
             case 5.1f:
                 //Whole_GaoDa
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                if (float.Parse(timeLineData[index][8]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Blue, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][8]));
+                    Hint = Instantiate(songHintSakura_Blue_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 0;
@@ -286,7 +427,16 @@ public class SongControlSystem : MonoBehaviour
             case 5.2f:
                 //Whole_GaoDa
                 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                if (float.Parse(timeLineData[index][9]) == 200)
+                {
+                    Hint = Instantiate(songHintSakura_Pink, gameObject.transform);
+                }
+                else
+                {
+                    Vector3 rotateAngle = new Vector3(0, 0, float.Parse(timeLineData[index][9]));
+                    Hint = Instantiate(songHintSakura_Pink_Arrow, gameObject.transform);
+                    Hint.transform.GetChild(2).transform.Rotate(rotateAngle);
+                }
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
                 Hint.GetComponent<SongButtonHintSakura>().hintType = 1;
