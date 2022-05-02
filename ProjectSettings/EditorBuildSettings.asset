@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: ec7a01dac05b4fb4aa9f468ae201fe92
   - enabled: 1
-    path: Assets/Scenes/MenuScene.unity
-    guid: abc8782cbda11484dbb964e24e588e1b
+    path: Assets/Scenes/Tutorial.unity
+    guid: 760286b81832f1248b574b6b696e5e3d
   - enabled: 1
     path: Assets/Scenes/VRGame.unity
     guid: 59f6d03279660bd4c8f703fe23224d7a

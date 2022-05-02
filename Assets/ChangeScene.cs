@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public void NextScene()
+    public void TutorialScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void GameScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 }
