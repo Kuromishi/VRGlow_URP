@@ -31,14 +31,27 @@ public class Tutorialll : MonoBehaviour
         if(vp.isPlaying)
         {
             videoFrame = vp.frame;
-            if (videoFrame >= vp.frameCount-1)//check whether the video is over
+            if (vp.clip.name == "T1" && videoFrame >= vp.frameCount - 1)//check whether the video is over
             {
                 //Debug.Log("Spawn Particle Here!");
 
                 vp.clip = VideoClipList[1];
+                
                 vp.Play();
-                videoPlaying = false;
+                //videoPlaying = false;
             }
+            else if(vp.clip.name == "T2" && videoFrame >= vp.frameCount - 1)
+            {
+                vp.clip = VideoClipList[2];
+                
+                vp.Play();
+            }
+            else if(vp.clip.name == "T3" && videoFrame >= vp.frameCount - 1)
+            {
+                vp.clip = VideoClipList[3];
+                vp.Play();
+            }
+                
         }
 
 
