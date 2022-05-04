@@ -4995,7 +4995,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4516171937962451594}
   serializedVersion: 8
-  lengthInSec: 3
+  lengthInSec: 2.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -5070,7 +5070,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 2.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -10063,7 +10063,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 1.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -10382,7 +10382,7 @@ ParticleSystem:
     maxNumParticles: 1
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
-    rotation3D: 1
+    rotation3D: 0
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
@@ -11432,7 +11432,7 @@ ParticleSystem:
     z:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.1
+      scalar: 1.2
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -14597,7 +14597,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d8bf12ada3a56d64ea6c1ef6cb1692f7, type: 2}
+  - {fileID: 2100000, guid: 749fc805acc5a144d97f66145b5b6554, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14628,7 +14628,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
-  m_RenderAlignment: 2
+  m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
   m_UseCustomVertexStreams: 0
@@ -14865,7 +14865,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.45882353, b: 0.7647059, a: 1}
+      maxColor: {r: 1, g: 0.5518868, b: 0.8059716, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -14927,7 +14927,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.45
+      scalar: 1.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -15246,7 +15246,7 @@ ParticleSystem:
     maxNumParticles: 1
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
-    rotation3D: 1
+    rotation3D: 0
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
@@ -15303,7 +15303,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 0
-    type: 4
+    type: 0
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -15390,7 +15390,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.01
       mode: 0
       spread: 0
       speed:
@@ -19461,7 +19461,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d8bf12ada3a56d64ea6c1ef6cb1692f7, type: 2}
+  - {fileID: 2100000, guid: 749fc805acc5a144d97f66145b5b6554, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19492,7 +19492,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
-  m_RenderAlignment: 2
+  m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
   m_UseCustomVertexStreams: 0
