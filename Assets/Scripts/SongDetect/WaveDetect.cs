@@ -7,6 +7,7 @@ public class WaveDetect : MonoBehaviour
     float timer = 0;
     public bool needHint;
     bool resulted = false;
+    bool scored = true;
 
     float saberSpeed;
 
@@ -20,20 +21,20 @@ public class WaveDetect : MonoBehaviour
     public float excellentLength;
     private void Start()
     {
-        rightArrow = transform.GetChild(0).gameObject;
-        leftArrow = transform.GetChild(1).gameObject;
+        rightArrow = transform.GetChild(1).gameObject;
+        leftArrow = transform.GetChild(0).gameObject;
     }
     private void FixedUpdate()
     {
         timer += Time.deltaTime;
         if (needHint == true)
         {
-            if (timer >= 0.5f && !rightAppeared)
+            if (timer >= 0f && !rightAppeared)
             {
                 rightArrow.SetActive(true);
                 rightAppeared = true;
             }
-            if (timer >= 1.6108f && !leftAppeared)
+            if (timer >= 1.1108f && !leftAppeared)
             {
                 leftArrow.SetActive(true);
                 leftAppeared = true;
@@ -45,12 +46,19 @@ public class WaveDetect : MonoBehaviour
             if (saberSpeed != 0f)
             {
                 Debug.Log("Wave Good!");
+                SongControlSystem.score += 1;
+                SongControlSystem.combo += 1;
+                scored = true;
                 Instantiate(effect, gameObject.transform.parent);
             }
             resulted = true;
         }
         if (timer >= 3f)
         {
+            if (!scored)
+            {
+                SongControlSystem.combo = 0;
+            }
             Destroy(gameObject);
         }
     }

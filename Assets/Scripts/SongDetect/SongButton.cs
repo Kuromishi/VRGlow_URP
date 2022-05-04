@@ -55,6 +55,7 @@ public class SongButton : MonoBehaviour
         else if (timer >= goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds)
         {
             Debug.Log("Missed!");
+            SongControlSystem.combo = 0;
             Destroy(gameObject);
         }
     }
@@ -88,31 +89,34 @@ public class SongButton : MonoBehaviour
                     case State.good:
                         Debug.Log("Good!");
                         SongControlSystem.score += 1;
+                        SongControlSystem.combo += 1;
                         break;
                     case State.excellent:
                         Debug.Log("Excellent!");
                         SongControlSystem.score += 3;
+                        SongControlSystem.combo += 1;
                         break;
                     case State.perfect:
                         Debug.Log("Perfect!");
                         SongControlSystem.score += 5;
+                        SongControlSystem.combo += 1;
                         break;
                 }
 
                 if (boomType == 0)
                 {
-                    Instantiate(boomEffectBlue, transform.position, transform.rotation);
+                    Instantiate(boomEffectBlue, transform.position, boomEffectBlue.transform.rotation);
                     if (finalState == State.excellent)
                     {
-                        Instantiate(boomEffectBlue_Perfect, transform.position, transform.rotation);
+                        Instantiate(boomEffectBlue_Perfect, transform.position, boomEffectBlue_Perfect.transform.rotation);
                     }
                 }
                 else
                 {
-                    Instantiate(boomEffectPink, transform.position, transform.rotation);
+                    Instantiate(boomEffectPink, transform.position, boomEffectPink.transform.rotation);
                     if (finalState == State.excellent)
                     {
-                        Instantiate(boomEffectPink_Perfect, transform.position, transform.rotation);
+                        Instantiate(boomEffectPink_Perfect, transform.position, boomEffectPink_Perfect.transform.rotation);
                     }
                 }
                 Destroy(gameObject);

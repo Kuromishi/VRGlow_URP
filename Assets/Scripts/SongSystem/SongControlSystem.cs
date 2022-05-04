@@ -3,16 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SongControlSystem : MonoBehaviour
 {
     float timer = 0;
 
     public static int score = 0;
+    public static int combo = 0;
+    int highestCombo = 0;
 
     public bool playing = false;
     bool songPlayed = false;
     bool scoreShowed = false;
+
+    public Text scoreText;
+    public Text comboText;
 
     [Header("SongDetectOriginPosition")]
     public Vector3 leftPosition;
@@ -91,6 +97,8 @@ public class SongControlSystem : MonoBehaviour
             {
                 AkSoundEngine.StopAll();
                 score = 0;
+                combo = 0;
+                highestCombo = 0;
                 song.Post(gameObject, (uint)AkCallbackType.AK_Marker, DetectAppear);
                 songPlayed = true;
             }
@@ -105,6 +113,14 @@ public class SongControlSystem : MonoBehaviour
                 scoreShowed = true;
                 timer = 0;
             }
+        }
+
+        scoreText.text = "Score\n" + score;
+        comboText.text = "Combo\n" + combo;
+
+        if (combo > highestCombo)
+        {
+            highestCombo = combo;
         }
     }
     public void DetectAppear(object in_cookie, AkCallbackType in_type, object in_info)

@@ -20,6 +20,7 @@ public class UpDraft : MonoBehaviour
     bool hitBoxOneActivated = false;
     bool hitBoxTwoActivated = false;
     bool hitBoxEndActivated = false;
+    bool scored = false;
 
     private void Start()
     {
@@ -62,9 +63,15 @@ public class UpDraft : MonoBehaviour
             hitBox_End.SetActive(true);
             hitBoxEndActivated = true;
         }
-        else if (timer >= 4f)
+        else if (timer >= 4f && !scored)
         {
+            scored = true;
             SongControlSystem.score += score;
+            if (score == 0)
+            {
+                SongControlSystem.combo = 0;
+            }
+            SongControlSystem.combo += 1;
         }
     }
     private void OnTriggerStay(Collider other)
