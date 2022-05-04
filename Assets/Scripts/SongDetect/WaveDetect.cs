@@ -50,7 +50,7 @@ public class WaveDetect : MonoBehaviour
             }
             resulted = true;
         }
-        if (timer >= 3f)
+        if (timer >= 4f)
         {
             if (!scored)
             {
