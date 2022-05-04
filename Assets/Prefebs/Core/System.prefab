@@ -49,6 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playing: 0
+  scoreText: {fileID: 0}
+  comboText: {fileID: 0}
   leftPosition: {x: 0, y: 0, z: -0.25}
   rightPosition: {x: 0, y: 0, z: 0.25}
   startButton: {fileID: 7475812118492003221, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
@@ -57,7 +59,7 @@ MonoBehaviour:
   songHintSakura_Pink: {fileID: 116335956005659194, guid: b45ea8076de414d4697d5e6fa922107f, type: 3}
   songHintSakura_Pink_Arrow: {fileID: 4639049340451740160, guid: a4f8711342fe9d249bf2ea58241cbde5, type: 3}
   waveDetect: {fileID: 12406724322403978, guid: c0ab83cc6661ae9439095030bff368a6, type: 3}
-  upDraft: {fileID: 5924891469781419584, guid: 44c5bc9783f45b841b68103e50ed96c6, type: 3}
+  upDraft: {fileID: 602912804257269793, guid: f617432a6f3cf354cacda22bfeb3ab32, type: 3}
   npcController: {fileID: 2432834599284696398, guid: 4fbe49597b3b56441ab495c1e58b953a, type: 3}
   song:
     idInternal: 0

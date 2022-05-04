@@ -13,10 +13,12 @@ public class SongButton : MonoBehaviour
 
     float timer = 0;
 
+    [Header("判定时间窗口，good + excellent + 一半的perfect时间 = 0.5s")]
     public float goodTimeSeconds;
     public float excellentTimeSeconds;
     public float perfectTimeSeconds;
 
+    [Header("判定速度，这个检测y轴向下速度，因此建议弄小一点= =")]
     public float goodSpeed;
     public float excellentSpeed;
 
@@ -88,17 +90,17 @@ public class SongButton : MonoBehaviour
                 {
                     case State.good:
                         Debug.Log("Good!");
-                        SongControlSystem.score += 1;
+                        SongControlSystem.score += 1 * SongControlSystem.scoreRatio;
                         SongControlSystem.combo += 1;
                         break;
                     case State.excellent:
                         Debug.Log("Excellent!");
-                        SongControlSystem.score += 3;
+                        SongControlSystem.score += 3 * SongControlSystem.scoreRatio;
                         SongControlSystem.combo += 1;
                         break;
                     case State.perfect:
                         Debug.Log("Perfect!");
-                        SongControlSystem.score += 5;
+                        SongControlSystem.score += 5 * SongControlSystem.scoreRatio;
                         SongControlSystem.combo += 1;
                         break;
                 }

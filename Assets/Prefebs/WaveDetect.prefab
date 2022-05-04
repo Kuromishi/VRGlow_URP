@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 12406724322403977}
   - component: {fileID: 12406724322403976}
   - component: {fileID: 12406724322404023}
-  - component: {fileID: 2255897322436526991}
   m_Layer: 0
   m_Name: WaveDetect
   m_TagString: Untagged
@@ -113,28 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   needHint: 0
-  effect: {fileID: 1350551872007167037, guid: 1a98410f7b35c1541a6406e1790e18b5, type: 3}
-  goodLength: 0.1
-  excellentLength: 0.2
---- !u!95 &2255897322436526991
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12406724322403978}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 40d4f2efccc92fd4993373b96716aad8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  effect: {fileID: 7458919882875625547, guid: 03c4bbeead5825e42a5113f4d843e4ee, type: 3}
 --- !u!1001 &2636766398625162487
 PrefabInstance:
   m_ObjectHideFlags: 0

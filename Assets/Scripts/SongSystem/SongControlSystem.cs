@@ -10,6 +10,7 @@ public class SongControlSystem : MonoBehaviour
     float timer = 0;
 
     public static int score = 0;
+    public static int scoreRatio;
     public static int combo = 0;
     int highestCombo = 0;
 
@@ -122,6 +123,8 @@ public class SongControlSystem : MonoBehaviour
         {
             highestCombo = combo;
         }
+        scoreRatio = (combo / 20) + 1;
+        Debug.Log("Score Ratio: " + scoreRatio);
     }
     public void DetectAppear(object in_cookie, AkCallbackType in_type, object in_info)
     {

@@ -22,13 +22,6 @@ public class UpDraft : MonoBehaviour
     bool hitBoxEndActivated = false;
     bool scored = false;
 
-    private void Start()
-    {
-        hitBox_Start = transform.GetChild(2).transform.GetChild(0).gameObject;
-        hitBox_Sub_1 = transform.GetChild(3).transform.GetChild(0).gameObject;
-        hitBox_Sub_2 = transform.GetChild(4).transform.GetChild(0).gameObject;
-        hitBox_End = transform.GetChild(5).transform.GetChild(0).gameObject;
-    }
     private void Update()
     {
         if (isDrafting)
