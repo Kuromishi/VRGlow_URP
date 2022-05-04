@@ -11,7 +11,7 @@ public class SongButton : MonoBehaviour
     public GameObject boomEffectPink;
     public GameObject boomEffectPink_Perfect;
 
-    float timer = 0;
+    protected float timer = 0;
 
     [Header("判定时间窗口，good + excellent + 一半的perfect时间 = 0.5s")]
     public float goodTimeSeconds;
@@ -22,10 +22,10 @@ public class SongButton : MonoBehaviour
     public float goodSpeed;
     public float excellentSpeed;
 
-    public enum State { good, excellent, perfect }
-    public State timeState;
-    public State speedState;
-    void FixedUpdate()
+    protected enum State { good, excellent, perfect }
+    protected State timeState;
+    protected State speedState;
+    protected virtual void FixedUpdate()
     {
         timer += Time.deltaTime;
 

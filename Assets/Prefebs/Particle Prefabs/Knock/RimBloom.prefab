@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9077067453715916903}
-  - component: {fileID: 4229943642753438655}
   - component: {fileID: 5462940518972601303}
   - component: {fileID: 332158042978789396}
   m_Layer: 0
@@ -34,20 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
---- !u!114 &4229943642753438655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110779253366024555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a29e579bfd717948881cae62f8e810d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hintType: 0
-  songButton: {fileID: 7475812118492003221, guid: 95a36bae98b5c5345b00ba949a3bc952, type: 3}
 --- !u!198 &5462940518972601303
 ParticleSystem:
   m_ObjectHideFlags: 0
