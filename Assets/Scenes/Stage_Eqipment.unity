@@ -16344,8 +16344,8 @@ MonoBehaviour:
   sakuraBlue_Arrow: {fileID: 4607945924583548323, guid: 32535f3dee1db764795924d80c50fcab, type: 3}
   step1Transform_P: {fileID: 501308791}
   step1Transform_B: {fileID: 678720072}
-  step2Transform_P: {fileID: 0}
-  step2Transform_B: {fileID: 0}
+  step2Transform_P: {fileID: 641990586}
+  step2Transform_B: {fileID: 1861018684}
 --- !u!328 &998796524
 VideoPlayer:
   m_ObjectHideFlags: 0
