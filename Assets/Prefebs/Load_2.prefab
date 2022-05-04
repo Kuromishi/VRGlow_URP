@@ -14698,7 +14698,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 1.5
+    scalar: 0
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -24405,10 +24405,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1313207429072633789, guid: 9fd6cc875cb19af419ae857b650cfffb, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1313207429072633789, guid: 9fd6cc875cb19af419ae857b650cfffb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -24434,18 +24430,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1313207429072633789, guid: 9fd6cc875cb19af419ae857b650cfffb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1313207429072633789, guid: 9fd6cc875cb19af419ae857b650cfffb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1313207429072633789, guid: 9fd6cc875cb19af419ae857b650cfffb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1313207429072633789, guid: 9fd6cc875cb19af419ae857b650cfffb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
