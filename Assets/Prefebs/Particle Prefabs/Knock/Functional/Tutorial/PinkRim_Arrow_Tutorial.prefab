@@ -19532,7 +19532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a29e579bfd717948881cae62f8e810d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintType: 0
+  hintType: 1
   songButton: {fileID: 7475812118492003221, guid: 1ef8fe6056974284fa9db63ebe7787c9, type: 3}
 --- !u!198 &736589891198812348
 ParticleSystem:

@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 602912804257269804}
   - component: {fileID: 602912804257269807}
   - component: {fileID: 602912804257269806}
-  - component: {fileID: 5257537910952690211}
   m_Layer: 0
-  m_Name: Load_2
+  m_Name: UpDraft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4812,19 +4811,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &5257537910952690211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602912804257269793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89473b7b940cdd940990fd2ea437d224, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
 --- !u!1 &2452093478687659712
 GameObject:
   m_ObjectHideFlags: 0

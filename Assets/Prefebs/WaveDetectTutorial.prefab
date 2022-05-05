@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 12406724322404022}
   - component: {fileID: 12406724322403977}
   - component: {fileID: 12406724322403976}
-  - component: {fileID: 12406724322404023}
+  - component: {fileID: 1561930609262360887}
   m_Layer: 0
-  m_Name: WaveDetect
+  m_Name: WaveDetectTutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &12406724322404023
+--- !u!114 &1561930609262360887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,11 +109,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 12406724322403978}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cd9cc7be6256e24fb84f85e49e4b47e, type: 3}
+  m_Script: {fileID: 11500000, guid: 83b8fe83e594ddf49a0b159fee0261df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  needStartHint: 0
-  needHint: 0
+  needStartHint: 1
+  needHint: 1
   effect: {fileID: 7458919882875625547, guid: 03c4bbeead5825e42a5113f4d843e4ee, type: 3}
 --- !u!1001 &1560600507982265813
 PrefabInstance:

@@ -291,6 +291,7 @@ public class SongControlSystem : MonoBehaviour
             case 2.5f:
                 //wave start
                 Hint = Instantiate(waveDetect, gameObject.transform);
+                Hint.GetComponent<WaveDetect>().needStartHint = true;
                 Hint.GetComponent<WaveDetect>().needHint = true;
 
                 Invoke("AnimWaveStart", 0.5f);
@@ -300,12 +301,14 @@ public class SongControlSystem : MonoBehaviour
             case 3:
                 //wave
                 Hint = Instantiate(waveDetect, gameObject.transform);
+                Hint.GetComponent<WaveDetect>().needStartHint = false;
                 Hint.GetComponent<WaveDetect>().needHint = false;
 
                 break;
 
             case 3.5f:
                 Hint = Instantiate(waveDetect, gameObject.transform);
+                Hint.GetComponent<WaveDetect>().needStartHint = false;
                 Hint.GetComponent<WaveDetect>().needHint = true;
 
                 Invoke("AnimWave", 1.5f);

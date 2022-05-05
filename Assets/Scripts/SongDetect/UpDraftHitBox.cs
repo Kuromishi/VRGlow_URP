@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UpDraftHitBox : MonoBehaviour
 {
-    float timer = 0;
-    float scoreTimer = 0;
-    bool colliderOpened = false;
+    protected float timer = 0;
+    protected float scoreTimer = 0;
+    protected bool colliderOpened = false;
     private void Update()
     {
         timer += Time.deltaTime;
@@ -29,7 +29,7 @@ public class UpDraftHitBox : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerStay(Collider other)
+    protected void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Saber_Main") || other.gameObject.CompareTag("Saber_Sub"))
         {
@@ -37,7 +37,7 @@ public class UpDraftHitBox : MonoBehaviour
             transform.GetChild(0).gameObject.SetActive(true);
         }
     }
-    private void OnTriggerExit(Collider other)
+    protected void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Saber_Main") || other.gameObject.CompareTag("Saber_Sub"))
         {

@@ -4,22 +4,27 @@ using UnityEngine;
 
 public class WaveDetect : MonoBehaviour
 {
-    float timer = 0;
+    protected float timer = 0;
+    public bool needStartHint;
     public bool needHint;
-    bool resulted = false;
-    bool scored = true;
+    protected bool resulted = false;
+    protected bool scored = true;
 
-    float saberSpeed;
+    protected float saberSpeed;
 
     public GameObject effect;
-    GameObject rightArrow;
-    GameObject leftArrow;
-    bool rightAppeared = false;
-    bool leftAppeared = false;
-    private void Start()
+    protected GameObject rightArrow;
+    protected GameObject leftArrow;
+    protected bool rightAppeared = false;
+    protected bool leftAppeared = false;
+    protected void Start()
     {
         rightArrow = transform.GetChild(0).gameObject;
         leftArrow = transform.GetChild(1).gameObject;
+        if (needStartHint)
+        {
+            transform.GetChild(2).gameObject.SetActive(true);
+        }
     }
     private void FixedUpdate()
     {
@@ -59,14 +64,14 @@ public class WaveDetect : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerStay(Collider other)
+    protected void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Saber_Main"))
         {
             saberSpeed = other.gameObject.transform.parent.GetComponentInParent<Rigidbody>().velocity.magnitude;
         }
     }
-    private void OnTriggerExit(Collider other)
+    protected void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Saber_Main"))
         {

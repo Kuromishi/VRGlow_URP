@@ -41,7 +41,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1411413617418025235}
   serializedVersion: 8
   lengthInSec: 3
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
@@ -4905,7 +4905,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1411413618000663629}
   serializedVersion: 8
   lengthInSec: 3
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
@@ -9769,7 +9769,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1411413618216423439}
   serializedVersion: 8
   lengthInSec: 3
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
@@ -14633,7 +14633,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1411413618572304392}
   serializedVersion: 8
   lengthInSec: 3
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
@@ -19497,7 +19497,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1411413618732681446}
   serializedVersion: 8
   lengthInSec: 3
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
@@ -24361,7 +24361,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1411413618995786048}
   serializedVersion: 8
   lengthInSec: 3
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
@@ -29225,7 +29225,7 @@ ParticleSystem:
   m_GameObject: {fileID: 6334581537270923559}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
@@ -34089,7 +34089,7 @@ ParticleSystem:
   m_GameObject: {fileID: 6334581538256341311}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
@@ -38953,7 +38953,7 @@ ParticleSystem:
   m_GameObject: {fileID: 6334581538258092794}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
@@ -43826,7 +43826,7 @@ ParticleSystem:
   m_GameObject: {fileID: 7769926408672401973}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 1.5
+  simulationSpeed: 2
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0

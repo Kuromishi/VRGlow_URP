@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class SongButtonTutorial : SongButton
 {
-    // Update is called once per frame
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
         if (timer >= goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds)
         {
-            Tutorialll.vp.Play();
+            GetComponentInParent<Tutorialll>().missCount++;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -42,15 +41,15 @@ public class SongButtonTutorial : SongButton
                 {
                     case State.good:
                         Debug.Log("Good!");
-                        Tutorialll.PlayVideo();
+                        GetComponentInParent<Tutorialll>().perfectCount++;
                         break;
                     case State.excellent:
                         Debug.Log("Excellent!");
-                        Tutorialll.PlayVideo();
+                        GetComponentInParent<Tutorialll>().perfectCount++;
                         break;
                     case State.perfect:
                         Debug.Log("Perfect!");
-                        Tutorialll.PlayVideo();
+                        GetComponentInParent<Tutorialll>().perfectCount++;
                         break;
                 }
 
