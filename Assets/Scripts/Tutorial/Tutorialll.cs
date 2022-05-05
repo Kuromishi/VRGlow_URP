@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
@@ -46,6 +47,7 @@ public class Tutorialll : MonoBehaviour
     private void Update()
     {
         videoFrame = vp.frame;
+
         if (videoPlaying && !videoPlayed)
         {
             videoPlayed = true;
@@ -61,29 +63,26 @@ public class Tutorialll : MonoBehaviour
             vp.Play();
         }
 
-        if (missCount == CountList[videoIndex])
+        if (missCount > 0)
         {
             missCount = 0;
             perfectCount = 0;
+            videoFrame = 0;
             phaseBool[videoIndex] = false;
             vp.Play();
         }
 
         if (vp.isPlaying)
         {
-            if (vp.clip.name == "T1" && videoFrame >= vp.frameCount - 5 && phaseBool[videoIndex] == false)//check whether the video is over
+            if (vp.clip.name == "T1" && videoFrame >= vp.frameCount - 5 && !phaseBool[videoIndex])
             {
                 phaseBool[videoIndex] = true;
-                Debug.Log(videoFrame);
-                Debug.Log(vp.frameCount);
                 Instantiate(sakuraPink, step1Transform_P);
                 Instantiate(sakuraBlue, step1Transform_B);
             }
             else if(vp.clip.name == "T2" && videoFrame >= vp.frameCount - 5 && !phaseBool[videoIndex])
             {
                 phaseBool[videoIndex] = true;
-                Debug.Log(videoFrame);
-                Debug.Log(vp.frameCount);
                 Instantiate(sakuraPink_Arrow, step1Transform_P);
                 Instantiate(sakuraBlue_Arrow, step1Transform_B);
                 Invoke("DetectStep2", 2f);
@@ -91,15 +90,11 @@ public class Tutorialll : MonoBehaviour
             else if(vp.clip.name == "T3" && videoFrame >= vp.frameCount - 5 && !phaseBool[videoIndex])
             {
                 phaseBool[videoIndex] = true;
-                Debug.Log(videoFrame);
-                Debug.Log(vp.frameCount);
                 Instantiate(waveDetect, step1Transform_P);
             }
             else if(vp.clip.name == "T4" && videoFrame >= vp.frameCount - 5 && !phaseBool[videoIndex])
             {
                 phaseBool[videoIndex] = true;
-                Debug.Log(videoFrame);
-                Debug.Log(vp.frameCount);
                 Instantiate(upDraft, step1Transform_P);
                 Instantiate(upDraft, step1Transform_B);
             }

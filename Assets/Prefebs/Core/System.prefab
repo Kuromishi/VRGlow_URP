@@ -51,6 +51,8 @@ MonoBehaviour:
   playing: 0
   scoreText: {fileID: 0}
   comboText: {fileID: 0}
+  leftTVanim: {fileID: 0}
+  rightTVanim: {fileID: 0}
   leftPosition: {x: 0, y: 0, z: -0.25}
   rightPosition: {x: 0, y: 0, z: 0.25}
   startButton: {fileID: 7475812118492003221, guid: d0a5f00157e4054479ee701cb9c3f82d, type: 3}
@@ -65,6 +67,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 7c8d870b1565d3349a000b2bcb0a7b2c, type: 2}
+  audience:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2f49d22e87c5de342b83b4a495a7b215, type: 2}
+  endFirework:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d27c340881d4878408ae8fb9308e30a6, type: 2}
 --- !u!114 &2174960542971134056
 MonoBehaviour:
   m_ObjectHideFlags: 0

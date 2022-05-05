@@ -36,7 +36,7 @@ public class WaveDetectTutorial : WaveDetect
         {
             if (!scored)
             {
-                GetComponentInParent<Tutorialll>().missCount++;
+                GetComponentInParent<Tutorialll>().perfectCount++;
             }
             Destroy(gameObject);
         }

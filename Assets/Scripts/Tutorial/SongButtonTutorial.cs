@@ -4,12 +4,40 @@ using UnityEngine;
 
 public class SongButtonTutorial : SongButton
 {
-    protected override void FixedUpdate()
+    void FixedUpdate()
     {
-        base.FixedUpdate();
-        if (timer >= goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds)
+        timer += Time.deltaTime;
+
+        if (timer < goodTimeSeconds)
         {
-            GetComponentInParent<Tutorialll>().missCount++;
+            timeState = State.good;
+        }
+
+        else if (timer >= goodTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds)
+        {
+            timeState = State.excellent;
+        }
+
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds)
+        {
+            timeState = State.perfect;
+        }
+
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds + perfectTimeSeconds && timer < goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds)
+        {
+            timeState = State.excellent;
+        }
+
+        else if (timer >= goodTimeSeconds + excellentTimeSeconds * 2 + perfectTimeSeconds && timer < goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds)
+        {
+            timeState = State.good;
+        }
+
+        else if (timer >= goodTimeSeconds * 2 + excellentTimeSeconds * 2 + perfectTimeSeconds)
+        {
+            Debug.Log("Missed!");
+            GetComponentInParent<Tutorialll>().perfectCount++;
+            Destroy(gameObject);
         }
     }
     private void OnTriggerEnter(Collider other)

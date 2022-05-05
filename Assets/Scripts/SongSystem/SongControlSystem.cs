@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class SongControlSystem : MonoBehaviour
 {
@@ -18,8 +19,14 @@ public class SongControlSystem : MonoBehaviour
     bool songPlayed = false;
     bool scoreShowed = false;
 
+    [Header("Score Text")]
     public Text scoreText;
     public Text comboText;
+
+    [Header("Score TV Animator")]
+    public Animator leftTVanim;
+    public Animator rightTVanim;
+    bool end = false;
 
     [Header("SongDetectOriginPosition")]
     public Vector3 leftPosition;
@@ -57,6 +64,8 @@ public class SongControlSystem : MonoBehaviour
 
     [Header("Wwise Event")]
     public AK.Wwise.Event song;
+    public AK.Wwise.Event audience;
+    public AK.Wwise.Event endFirework;
 
     private void Start()
     {
@@ -100,31 +109,29 @@ public class SongControlSystem : MonoBehaviour
                 score = 0;
                 combo = 0;
                 highestCombo = 0;
+                end = false;
                 song.Post(gameObject, (uint)AkCallbackType.AK_Marker, DetectAppear);
                 songPlayed = true;
             }
         }
 
-        if (index == numberOfLine - 1 && !scoreShowed)
-        {
-            timer += Time.deltaTime;
-            if (timer >= 3.0)
-            {
-                Debug.Log("Final Score: " + score);
-                scoreShowed = true;
-                timer = 0;
-            }
-        }
-
-        scoreText.text = "Score\n" + score;
-        comboText.text = "Combo\n" + combo;
-
         if (combo > highestCombo)
         {
             highestCombo = combo;
         }
+
+        if (!end)
+        {
+            scoreText.text = "Score\n" + score;
+            comboText.text = "Combo\n" + combo;
+        }
+        else
+        {
+            scoreText.text = "Score\n" + score;
+            comboText.text = "Best Combo\n" + highestCombo;
+        }
+
         scoreRatio = (combo / 20) + 1;
-        Debug.Log("Score Ratio: " + scoreRatio);
     }
     public void DetectAppear(object in_cookie, AkCallbackType in_type, object in_info)
     {
@@ -501,6 +508,19 @@ public class SongControlSystem : MonoBehaviour
 
                 Invoke("AnimUpDraft", 1.16f);
 
+                break;
+
+            case 999:
+                leftTVanim.Play("LeftTV");
+                rightTVanim.Play("RightTV");
+                audience.Post(gameObject);
+                endFirework.Post(gameObject);
+                GetComponentInChildren<VideoPlayer>().Stop();
+                end = true;
+                for (int i = 0; i < anims.Length; i++)
+                {
+                    anims[i].Play("Whole_RandomWave");
+                }
                 break;
         }
         index++;

@@ -20,7 +20,7 @@ public class UpDraftHitboxTutorial : UpDraftHitBox
             }
             else
             {
-                GetComponentInParent<Tutorialll>().missCount++;
+                GetComponentInParent<Tutorialll>().perfectCount++;
             }
             Destroy(gameObject);
         }

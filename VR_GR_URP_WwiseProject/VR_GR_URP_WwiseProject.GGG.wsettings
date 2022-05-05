@@ -4,7 +4,9 @@
 		<UserProjectSettings Name="" ID="{5D827346-96FF-49F7-84E3-0FCE5C5B1CC3}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\UNITY\VR相关\"/>
+				<Property Name="Event Action List\{024C213A-2B53-409D-ADDE-F16AAD33C437}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{99D6FF51-0815-4574-9EDF-0A42093C36BD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F6CF45A9-81C0-48E2-A406-4F0182B965C1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -23,7 +25,7 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="C7FxN4mDhkicpQvCPZdQnQ=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="3SBbtLMn70+OQa9VjbhaZw=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="VpN3QPFTgUqgyd69WbwEKd0gW7SzJ+9PjkGvVY24Wmc="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="mFMFboeUL0ma3ayXIrR5MAEnhhj/////6F3rhMobq06EBgWtWiL9KwEnhhj/////"/>
 				<Property Name="Interactive Music\x64_{2A68D391-C186-4F43-99C6-EE4D9509611A} - SegmentEditorZoomInfo" Type="string" Value="OTHkHdJHIEAPmPIOxzcUQAoYPJb3ahtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAgFpA"/>

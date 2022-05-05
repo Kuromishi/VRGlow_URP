@@ -25,7 +25,7 @@ public class SongButton : MonoBehaviour
     protected enum State { good, excellent, perfect }
     protected State timeState;
     protected State speedState;
-    protected virtual void FixedUpdate()
+    void FixedUpdate()
     {
         timer += Time.deltaTime;
 
