@@ -5,7 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{B45B20DD-27B3-4FEF-8E41-AF558DB85A67}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Fire" ID="{024C213A-2B53-409D-ADDE-F16AAD33C437}" WorkUnitID="{B41EDFBA-F6E4-4934-BE53-1FD959BA7213}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Audience" ID="{5376B6A3-7867-425E-9D03-2A9FAB9A7A76}" WorkUnitID="{B41EDFBA-F6E4-4934-BE53-1FD959BA7213}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Song" ID="{99D6FF51-0815-4574-9EDF-0A42093C36BD}" WorkUnitID="{B41EDFBA-F6E4-4934-BE53-1FD959BA7213}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TutorialBGM" ID="{B2EC5D76-FD26-4680-B477-455A5BAFA2AC}" WorkUnitID="{B41EDFBA-F6E4-4934-BE53-1FD959BA7213}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_button" ID="{F6CF45A9-81C0-48E2-A406-4F0182B965C1}" WorkUnitID="{B41EDFBA-F6E4-4934-BE53-1FD959BA7213}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_StartBGM" ID="{8939E8FE-28FB-4A14-9336-B0DE2F1794E3}" WorkUnitID="{B41EDFBA-F6E4-4934-BE53-1FD959BA7213}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EndFireworks" ID="{84E3993C-E9FA-4EA6-A703-64E8E44535FA}" WorkUnitID="{B41EDFBA-F6E4-4934-BE53-1FD959BA7213}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
