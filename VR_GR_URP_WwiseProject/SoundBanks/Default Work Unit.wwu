@@ -16,6 +16,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Button" ID="{40779356-53F1-4A81-A0C9-DEBD59BC0429}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_button" ID="{F6CF45A9-81C0-48E2-A406-4F0182B965C1}" WorkUnitID="{B41EDFBA-F6E4-4934-BE53-1FD959BA7213}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

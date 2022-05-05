@@ -11,21 +11,84 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="977454165" Language="SFX" Hash="64698635">
+			<ObjectPath>\SoundBanks\Default Work Unit\Button</ObjectPath>
+			<ShortName>Button</ShortName>
+			<Path>Button.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2099555730" Name="Play_button" ObjectPath="\Events\Default Work Unit\Play_button" DurationType="OneShot" DurationMin="0.731429" DurationMax="0.731429">
+					<IncludedMemoryFiles>
+						<File Id="535262671" Language="SFX">
+							<ShortName>button.wav</ShortName>
+							<Path>SFX\button_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3232092482">
+		<SoundBank Id="3161908922" Language="SFX" Hash="93186">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1245578140" Name="Play_Audience" ObjectPath="\Events\Default Work Unit\Play_Audience" DurationType="OneShot" DurationMin="12.538775" DurationMax="12.538775">
+					<IncludedMemoryFiles>
+						<File Id="484104409" Language="SFX">
+							<ShortName>Audience.wav</ShortName>
+							<Path>SFX\Audience_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2099555730" Name="Play_button" ObjectPath="\Events\Default Work Unit\Play_button" DurationType="OneShot" DurationMin="0.731429" DurationMax="0.731429">
+					<IncludedMemoryFiles>
+						<File Id="535262671" Language="SFX">
+							<ShortName>button.wav</ShortName>
+							<Path>SFX\button_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3983493273" Name="Play_EndFireworks" ObjectPath="\Events\Default Work Unit\Play_EndFireworks" DurationType="OneShot" DurationMin="18.99102" DurationMax="18.99102">
+					<IncludedMemoryFiles>
+						<File Id="357648460" Language="SFX">
+							<ShortName>EndFireworks.wav</ShortName>
+							<Path>SFX\EndFireworks_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3015324718" Name="Play_Fire" ObjectPath="\Events\Default Work Unit\Play_Fire" DurationType="OneShot" DurationMin="6.29551" DurationMax="6.29551">
+					<IncludedMemoryFiles>
+						<File Id="180358417" Language="SFX">
+							<ShortName>Fire.wav</ShortName>
+							<Path>SFX\Fire_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="251043389" Name="Play_Song" ObjectPath="\Events\Default Work Unit\Play_Song" DurationType="OneShot" DurationMin="212." DurationMax="212.">
 					<IncludedMemoryFiles>
 						<File Id="416915846" Language="SFX">
 							<ShortName>一途な失恋を表現した楽曲.wav</ShortName>
 							<Path>SFX\一途な失恋を表現した楽曲_2C920B75.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4228967628" Name="Play_StartBGM" ObjectPath="\Events\Default Work Unit\Play_StartBGM" DurationType="OneShot" DurationMin="75.337143" DurationMax="75.337143">
+					<IncludedMemoryFiles>
+						<File Id="622861012" Language="SFX">
+							<ShortName>StartBGM.wav</ShortName>
+							<Path>SFX\StartBGM_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2622108910" Name="Play_TutorialBGM" ObjectPath="\Events\Default Work Unit\Play_TutorialBGM" DurationType="OneShot" DurationMin="200.594284" DurationMax="200.594284">
+					<IncludedMemoryFiles>
+						<File Id="980207220" Language="SFX">
+							<ShortName>TutorialBGM.wav</ShortName>
+							<Path>SFX\TutorialBGM_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

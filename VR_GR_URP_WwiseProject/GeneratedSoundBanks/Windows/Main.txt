@@ -1,6 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
 	251043389	Play_Song			\Default Work Unit\Play_Song	
+	1245578140	Play_Audience			\Default Work Unit\Play_Audience	
+	2099555730	Play_button			\Default Work Unit\Play_button	
+	2622108910	Play_TutorialBGM			\Default Work Unit\Play_TutorialBGM	
+	3015324718	Play_Fire			\Default Work Unit\Play_Fire	
+	3983493273	Play_EndFireworks			\Default Work Unit\Play_EndFireworks	
+	4228967628	Play_StartBGM			\Default Work Unit\Play_StartBGM	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	180358417	Fire	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Windows\SFX\Fire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire		1110592
+	357648460	EndFireworks	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Windows\SFX\EndFireworks_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EndFireworks		3350080
 	416915846	Song	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Windows\SFX\一途な失恋を表現した楽曲_2C920B75.wem		\Actor-Mixer Hierarchy\Default Work Unit\Song		37418656
+	484104409	Audience	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Windows\SFX\Audience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Audience		2211904
+	535262671	button	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Windows\SFX\button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\button		129088
+	622861012	StartBGM	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Windows\SFX\StartBGM_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\StartBGM		13289536
+	980207220	TutorialBGM	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Windows\SFX\TutorialBGM_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialBGM		35384896
 
