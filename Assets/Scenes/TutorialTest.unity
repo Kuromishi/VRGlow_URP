@@ -15040,7 +15040,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 9.118043, y: 1.1428074, z: 5.133258}
+  m_ConnectedAnchor: {x: 9.118043, y: 1.4078074, z: 5.133258}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -16222,6 +16222,8 @@ MonoBehaviour:
   sakuraBlue_Arrow: {fileID: 4607945924583548323, guid: 3ccceaf2db13ce147bdaa6ff9cbde9db, type: 3}
   waveDetect: {fileID: 12406724322403978, guid: d87e8d7228cfb4f478ba261bdfea0d31, type: 3}
   upDraft: {fileID: 602912804257269793, guid: 191c494abeeaaff4380fe77657279d72, type: 3}
+  uIObject: {fileID: 1433676400}
+  uISpeed: 5
   step1Transform_P: {fileID: 501308791}
   step1Transform_B: {fileID: 678720072}
   step2Transform_P: {fileID: 641990586}
@@ -21622,7 +21624,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 9.085211, y: 1.1430645, z: 6.4448276}
+  m_ConnectedAnchor: {x: 9.085211, y: 1.4080645, z: 6.4448276}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -22448,7 +22450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6981822438045601741, guid: 419d61d369b7a334fa7a90c379c2b28b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.765
+      value: -0.968
       objectReference: {fileID: 0}
     - target: {fileID: 6981822438045601741, guid: 419d61d369b7a334fa7a90c379c2b28b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22780,6 +22782,11 @@ RectTransform:
 --- !u!224 &1433676399 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6981822438052042029, guid: 419d61d369b7a334fa7a90c379c2b28b, type: 3}
+  m_PrefabInstance: {fileID: 1433676397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1433676400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6981822438045601729, guid: 419d61d369b7a334fa7a90c379c2b28b, type: 3}
   m_PrefabInstance: {fileID: 1433676397}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1436068870

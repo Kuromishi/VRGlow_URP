@@ -28,6 +28,9 @@ public class Tutorialll : MonoBehaviour
     public GameObject waveDetect;
     public GameObject upDraft;
 
+    public GameObject uIObject;
+    public float uISpeed;
+
     public Transform step1Transform_P;
     public Transform step1Transform_B;
     public Transform step2Transform_P;
@@ -98,6 +101,7 @@ public class Tutorialll : MonoBehaviour
                 phaseBool[videoIndex] = true;
                 Instantiate(upDraft, step1Transform_P);
                 Instantiate(upDraft, step1Transform_B);
+                Invoke("UiUp",10);
             }
         }
     }
@@ -109,5 +113,9 @@ public class Tutorialll : MonoBehaviour
     void VideoPlay()
     {
         videoPlaying = true;
+    }
+    void UiUp()
+    {
+        uIObject.transform.localPosition = Vector3.MoveTowards(uIObject.transform.localPosition, new Vector3(0, 3, 0), uISpeed * Time.deltaTime);
     }
 }
