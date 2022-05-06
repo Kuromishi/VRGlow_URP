@@ -527,6 +527,14 @@ public class SongControlSystem : MonoBehaviour
                 fireInMiddle.Post(gameObject);
                 break;
 
+            case 7.1f:
+                for (int i = 0; i < fires.Length; i++)
+                {
+                    fires[i].Stop();
+                }
+                fireInMiddle.Post(gameObject);
+                break;
+
             case 999:
                 leftTVanim.Play("LeftTV");
                 rightTVanim.Play("RightTV");

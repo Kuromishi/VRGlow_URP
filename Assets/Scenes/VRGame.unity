@@ -27457,10 +27457,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7769926408672401973, guid: 3f7b028a76d39c749a085de48ebc03ac, type: 3}
     - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
-      propertyPath: fires.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: fires.Array.data[0]
       value: 
       objectReference: {fileID: 2144154814}
@@ -27477,25 +27473,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 82658244}
     - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
-      propertyPath: endFirePositions.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: endFirePositions.Array.data[0]
       value: 
-      objectReference: {fileID: 1794136383}
+      objectReference: {fileID: 1794136384}
     - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: endFirePositions.Array.data[1]
       value: 
-      objectReference: {fileID: 504382755}
+      objectReference: {fileID: 504382756}
     - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: endFirePositions.Array.data[2]
       value: 
-      objectReference: {fileID: 1995762698}
+      objectReference: {fileID: 1995762699}
     - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: endFirePositions.Array.data[3]
       value: 
-      objectReference: {fileID: 2101092663}
+      objectReference: {fileID: 2101092664}
     - target: {fileID: 2174960542971134060, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: m_Name
       value: System
@@ -27544,6 +27536,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2286141344223778913, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286141344223778913, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286141344223778913, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1377678367}
+    - target: {fileID: 2286141344223778913, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286141344223778913, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RightAttached
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286141344223778913, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StartButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286141344223778913, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2286141345083311082, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -27555,10 +27575,22 @@ PrefabInstance:
     - target: {fileID: 2286141345083311082, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1377678366}
+      objectReference: {fileID: 1377678367}
     - target: {fileID: 2286141345083311082, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286141345083311082, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LeftAttached
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286141345083311082, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StartButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286141345083311082, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8759616261215860836, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: m_IsActive
@@ -27566,18 +27598,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
---- !u!1 &1377678366 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2174960544224762916, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+--- !u!114 &1377678367 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2633875345285604596, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
   m_PrefabInstance: {fileID: 1377678365}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1377678367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377678366}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bce93f88a5ed57448029742e8fac5a4, type: 3}
