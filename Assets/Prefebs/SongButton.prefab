@@ -101,6 +101,7 @@ MonoBehaviour:
   boomEffectBlue_Perfect: {fileID: 3945516798012094307, guid: 81e0f8edcd1715c49a27a1017d2ad136, type: 3}
   boomEffectPink: {fileID: 8203740949204943786, guid: eaa542aef6afd354988a0e325422b96e, type: 3}
   boomEffectPink_Perfect: {fileID: 3945516798012094307, guid: 0be7c6dbc7e8e944db944fcf2d749341, type: 3}
+  failEffect: {fileID: 5588917244095642771, guid: a1e288d4e9ad381409dcbb6055084c32, type: 3}
   goodTimeSeconds: 0.1
   excellentTimeSeconds: 0.35
   perfectTimeSeconds: 0.1

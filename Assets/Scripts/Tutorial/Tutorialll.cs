@@ -6,11 +6,14 @@ using UnityEngine.Video;
 
 public class Tutorialll : MonoBehaviour
 {
+    bool leftAttached = false;
+    bool rightAttached = false;
+
     public VideoPlayer vp;
     public List<VideoClip> videoClipList;
     public int videoIndex = 0;
 
-    public bool videoPlaying = false;
+    bool videoPlaying = false;
     bool videoPlayed = false;
 
     public int perfectCount = 0;
@@ -26,6 +29,7 @@ public class Tutorialll : MonoBehaviour
     public GameObject sakuraBlue_Arrow;
 
     public GameObject waveDetect;
+    public GameObject waveDetectPre;
     public GameObject upDraft_Blue;
     public GameObject upDraft_Pink;
 
@@ -46,14 +50,13 @@ public class Tutorialll : MonoBehaviour
         vp = gameObject.GetComponent<VideoPlayer>();
         vp.clip = videoClipList[videoIndex];
 
-        Invoke("VideoPlay", 5);
         //videoPlaying = true;
     }
     private void Update()
     {
         videoFrame = vp.frame;
 
-        if (videoPlaying && !videoPlayed)
+        if (leftAttached && rightAttached && !videoPlayed)
         {
             videoPlayed = true;
             vp.Play();
@@ -90,19 +93,23 @@ public class Tutorialll : MonoBehaviour
                 phaseBool[videoIndex] = true;
                 Instantiate(sakuraPink_Arrow, step1Transform_P);
                 Instantiate(sakuraBlue_Arrow, step1Transform_B);
-                Invoke("DetectStep2", 2f);
+                Invoke(nameof(DetectStep2), 2f);
             }
             else if(vp.clip.name == "T3" && videoFrame >= vp.frameCount - 5 && !phaseBool[videoIndex])
             {
                 phaseBool[videoIndex] = true;
-                Instantiate(waveDetect, step1Transform_P);
+                WavePreAppear();
+                Invoke(nameof(WaveAppearHint), 1.4f);
+                Invoke(nameof(WaveAppearNoHint), 2.5108f);
+                Invoke(nameof(WaveAppearHint), 3.6216f);
+                Invoke(nameof(WaveAppearNoHint), 4.7324f);
             }
             else if(vp.clip.name == "T4" && videoFrame >= vp.frameCount - 5 && !phaseBool[videoIndex])
             {
                 phaseBool[videoIndex] = true;
                 Instantiate(upDraft_Pink, step1Transform_P);
                 Instantiate(upDraft_Blue, step1Transform_B);
-                Invoke("UiUp",6);
+                Invoke(nameof(UiUp), 6);
             }
         }
     }
@@ -111,13 +118,31 @@ public class Tutorialll : MonoBehaviour
         Instantiate(sakuraPink, step2Transform_P);
         Instantiate(sakuraBlue, step2Transform_B);
     }
-    void VideoPlay()
+    void WaveAppearHint()
     {
-        videoPlaying = true;
+        GameObject Hint = Instantiate(waveDetect, gameObject.transform);
+        Hint.GetComponent<WaveDetect>().needHint = true;
+    }
+    void WaveAppearNoHint()
+    {
+        GameObject Hint = Instantiate(waveDetect, gameObject.transform);
+        Hint.GetComponent<WaveDetect>().needHint = false;
+    }
+    void WavePreAppear()
+    {
+        Instantiate(waveDetectPre, gameObject.transform);
     }
     void UiUp()
     {
         Instantiate(uIObject, uiPos);
         Debug.Log("1");
+    }
+    public void LeftAttached()
+    {
+        leftAttached = true;
+    }
+    public void RightAttached()
+    {
+        rightAttached = true;
     }
 }

@@ -10,6 +10,7 @@ public class SongButton : MonoBehaviour
     public GameObject boomEffectBlue_Perfect;
     public GameObject boomEffectPink;
     public GameObject boomEffectPink_Perfect;
+    public GameObject failEffect;
 
     protected float timer = 0;
 
@@ -58,6 +59,7 @@ public class SongButton : MonoBehaviour
         {
             Debug.Log("Missed!");
             SongControlSystem.combo = 0;
+            Instantiate(failEffect, transform.position, failEffect.transform.rotation);
             Destroy(gameObject);
         }
     }
