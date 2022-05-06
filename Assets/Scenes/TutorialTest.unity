@@ -3050,6 +3050,34 @@ PrefabInstance:
       propertyPath: overridePreviewRightHandPrefab
       value: 
       objectReference: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25, type: 3}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 998796523}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LeftAttached
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Tutorialll, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1088985479062883582, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
       propertyPath: attachmentFlags
       value: 85
@@ -15780,7 +15808,6 @@ MonoBehaviour:
   - {fileID: 32900000, guid: c3550cae971ad99478c6f57b677237f9, type: 3}
   - {fileID: 32900000, guid: 37af31d7ace4f8141ac088c0d960c0e0, type: 3}
   videoIndex: 0
-  videoPlaying: 0
   perfectCount: 0
   missCount: 0
   CountList: 02000000040000000100000002000000
@@ -15791,6 +15818,7 @@ MonoBehaviour:
   sakuraPink_Arrow: {fileID: 4639049340451740160, guid: 4b7cb86732692b643963e14a879c9091, type: 3}
   sakuraBlue_Arrow: {fileID: 4607945924583548323, guid: 3ccceaf2db13ce147bdaa6ff9cbde9db, type: 3}
   waveDetect: {fileID: 12406724322403978, guid: d87e8d7228cfb4f478ba261bdfea0d31, type: 3}
+  waveDetectPre: {fileID: 7769926408672401973, guid: 3f7b028a76d39c749a085de48ebc03ac, type: 3}
   upDraft_Blue: {fileID: 4460822285773320142, guid: f2a20cabb660b1f4c81c7cb5641e07e6, type: 3}
   upDraft_Pink: {fileID: 1510612933319998571, guid: fb7e322ce61dec94480fac8c6642470e, type: 3}
   uIObject: {fileID: 3812094813132247182, guid: fd466a8b22904a040b8051236bf01344, type: 3}
@@ -20884,6 +20912,34 @@ PrefabInstance:
       propertyPath: overridePreviewRightHandPrefab
       value: 
       objectReference: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25, type: 3}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 998796523}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RightAttached
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Tutorialll, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010795441088, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
+      propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1088985479062883582, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
       propertyPath: attachmentFlags
       value: 85
