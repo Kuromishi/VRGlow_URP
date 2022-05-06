@@ -6448,7 +6448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_RootOrder
@@ -27441,21 +27441,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1259523636}
     - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
-      propertyPath: upDraft_Blue
-      value: 
-      objectReference: {fileID: 4460822285773320142, guid: daf869fc68cd0794ba8bb9d65f4229db, type: 3}
-    - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
-      propertyPath: upDraft_Pink
-      value: 
-      objectReference: {fileID: 1510612933319998571, guid: f329d02bf4ed0c344b06641d4763fc87, type: 3}
-    - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: npcController
       value: 
       objectReference: {fileID: 641871390}
-    - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
-      propertyPath: waveDetectPre
-      value: 
-      objectReference: {fileID: 7769926408672401973, guid: 3f7b028a76d39c749a085de48ebc03ac, type: 3}
     - target: {fileID: 2174960542971134057, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: fires.Array.data[0]
       value: 

@@ -15821,7 +15821,7 @@ MonoBehaviour:
   waveDetectPre: {fileID: 7769926408672401973, guid: 3f7b028a76d39c749a085de48ebc03ac, type: 3}
   upDraft_Blue: {fileID: 4460822285773320142, guid: f2a20cabb660b1f4c81c7cb5641e07e6, type: 3}
   upDraft_Pink: {fileID: 1510612933319998571, guid: fb7e322ce61dec94480fac8c6642470e, type: 3}
-  uIObject: {fileID: 3812094813132247182, guid: fd466a8b22904a040b8051236bf01344, type: 3}
+  uiObject: {fileID: 3812094813132247182, guid: fd466a8b22904a040b8051236bf01344, type: 3}
   uiPos: {fileID: 1381714467}
   step1Transform_P: {fileID: 501308791}
   step1Transform_B: {fileID: 678720072}
@@ -20753,7 +20753,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381714466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.614, y: 1.02, z: 5.75}
+  m_LocalPosition: {x: 8.614, y: 1.35, z: 5.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -26803,7 +26803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_RootOrder
@@ -26815,7 +26815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z

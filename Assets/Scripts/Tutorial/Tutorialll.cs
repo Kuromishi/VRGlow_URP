@@ -33,7 +33,7 @@ public class Tutorialll : MonoBehaviour
     public GameObject upDraft_Blue;
     public GameObject upDraft_Pink;
 
-    public GameObject uIObject;
+    public GameObject uiObject;
     public Transform uiPos;
 
     public Transform step1Transform_P;
@@ -134,8 +134,7 @@ public class Tutorialll : MonoBehaviour
     }
     void UiUp()
     {
-        Instantiate(uIObject, uiPos);
-        Debug.Log("1");
+        Instantiate(uiObject, uiPos);
     }
     public void LeftAttached()
     {

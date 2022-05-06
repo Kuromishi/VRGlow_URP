@@ -59,9 +59,10 @@ MonoBehaviour:
   songHintSakura_Pink: {fileID: 116335956005659194, guid: b45ea8076de414d4697d5e6fa922107f, type: 3}
   songHintSakura_Pink_Arrow: {fileID: 4639049340451740160, guid: a4f8711342fe9d249bf2ea58241cbde5, type: 3}
   waveDetect: {fileID: 12406724322403978, guid: c0ab83cc6661ae9439095030bff368a6, type: 3}
-  waveDetectPre: {fileID: 0}
-  upDraft_Blue: {fileID: 0}
-  upDraft_Pink: {fileID: 0}
+  waveDetectPre: {fileID: 7769926408672401973, guid: 3f7b028a76d39c749a085de48ebc03ac, type: 3}
+  upDraft_Blue: {fileID: 4460822285773320142, guid: daf869fc68cd0794ba8bb9d65f4229db, type: 3}
+  upDraft_Pink: {fileID: 1510612933319998571, guid: f329d02bf4ed0c344b06641d4763fc87, type: 3}
+  gameUI: {fileID: 3812094813132247182, guid: 1ebe2d38989e0d249b8abb174265bffe, type: 3}
   npcController: {fileID: 2432834599284696398, guid: 4fbe49597b3b56441ab495c1e58b953a, type: 3}
   fires:
   - {fileID: 0}
