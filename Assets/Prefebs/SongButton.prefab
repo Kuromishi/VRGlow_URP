@@ -101,13 +101,11 @@ MonoBehaviour:
   boomEffectBlue_Perfect: {fileID: 3945516798012094307, guid: 81e0f8edcd1715c49a27a1017d2ad136, type: 3}
   boomEffectPink: {fileID: 8203740949204943786, guid: eaa542aef6afd354988a0e325422b96e, type: 3}
   boomEffectPink_Perfect: {fileID: 3945516798012094307, guid: 0be7c6dbc7e8e944db944fcf2d749341, type: 3}
-  goodTimeSeconds: 0.2
-  excellentTimeSeconds: 0.15
-  perfectTimeSeconds: 0.2
+  goodTimeSeconds: 0.1
+  excellentTimeSeconds: 0.35
+  perfectTimeSeconds: 0.1
   goodSpeed: 0.1
   excellentSpeed: 0.2
-  timeState: 0
-  speedState: 0
 --- !u!65 &3305894788290341067
 BoxCollider:
   m_ObjectHideFlags: 0
