@@ -5,27 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public void StartScene()
+    {
+        AkSoundEngine.StopAll();
+        SceneManager.LoadScene("StartScene");
+    }
     public void TutorialScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         AkSoundEngine.StopAll();
+        SceneManager.LoadScene("TutorialTest");
     }
 
     public void GameScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         AkSoundEngine.StopAll();
+        SceneManager.LoadScene("VRGame");
     }
 
-    public void RestartTutorial()
+    public void Restart()
     {
+        AkSoundEngine.StopAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        AkSoundEngine.StopAll();
     }
 
-    public void EnterGame()
+    public void Exit()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         AkSoundEngine.StopAll();
+        Application.Quit();
     }
 }

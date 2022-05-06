@@ -15791,8 +15791,9 @@ MonoBehaviour:
   sakuraPink_Arrow: {fileID: 4639049340451740160, guid: 4b7cb86732692b643963e14a879c9091, type: 3}
   sakuraBlue_Arrow: {fileID: 4607945924583548323, guid: 3ccceaf2db13ce147bdaa6ff9cbde9db, type: 3}
   waveDetect: {fileID: 12406724322403978, guid: d87e8d7228cfb4f478ba261bdfea0d31, type: 3}
-  upDraft: {fileID: 602912804257269793, guid: 191c494abeeaaff4380fe77657279d72, type: 3}
-  uIObject: {fileID: 3812094813132247182, guid: 0eebde1b4ddc6a343b337e5fb0ff27c2, type: 3}
+  upDraft_Blue: {fileID: 4460822285773320142, guid: f2a20cabb660b1f4c81c7cb5641e07e6, type: 3}
+  upDraft_Pink: {fileID: 1510612933319998571, guid: fb7e322ce61dec94480fac8c6642470e, type: 3}
+  uIObject: {fileID: 3812094813132247182, guid: fd466a8b22904a040b8051236bf01344, type: 3}
   uiPos: {fileID: 1381714467}
   step1Transform_P: {fileID: 501308791}
   step1Transform_B: {fileID: 678720072}
@@ -15806,7 +15807,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998796522}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 897f7740f96c77747ab7ffa9df60d407, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 92b1e0cabb5f67a4aad0fb506a5f0610, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -20724,7 +20725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381714466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.995, y: 2.736, z: 5.684}
+  m_LocalPosition: {x: 8.614, y: 1.02, z: 5.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -26746,7 +26747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_RootOrder

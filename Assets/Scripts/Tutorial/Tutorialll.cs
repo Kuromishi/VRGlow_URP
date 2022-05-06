@@ -26,7 +26,8 @@ public class Tutorialll : MonoBehaviour
     public GameObject sakuraBlue_Arrow;
 
     public GameObject waveDetect;
-    public GameObject upDraft;
+    public GameObject upDraft_Blue;
+    public GameObject upDraft_Pink;
 
     public GameObject uIObject;
     public Transform uiPos;
@@ -99,8 +100,8 @@ public class Tutorialll : MonoBehaviour
             else if(vp.clip.name == "T4" && videoFrame >= vp.frameCount - 5 && !phaseBool[videoIndex])
             {
                 phaseBool[videoIndex] = true;
-                Instantiate(upDraft, step1Transform_P);
-                Instantiate(upDraft, step1Transform_B);
+                Instantiate(upDraft_Pink, step1Transform_P);
+                Instantiate(upDraft_Blue, step1Transform_B);
                 Invoke("UiUp",6);
             }
         }

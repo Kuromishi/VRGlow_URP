@@ -44,6 +44,7 @@ public class SongControlSystem : MonoBehaviour
     //5：里跳高敲；5.1:仅左侧；5.2：仅右侧
     //6：上升气流；6.1:仅左侧；6.2：仅右侧
     //7：放火！！！！
+    //7.1：停火！！！！
     //8：画心；
     //9：敲三下（起手）；9.1：仅出现判定点，用于三连敲的第二、三下
     //10：欢呼；
@@ -57,6 +58,7 @@ public class SongControlSystem : MonoBehaviour
     public GameObject waveDetectPre;
     public GameObject upDraft_Blue;
     public GameObject upDraft_Pink;
+    public GameObject gameUI;
 
     [Header("NPC Animation")]
     public GameObject npcController;
@@ -541,6 +543,7 @@ public class SongControlSystem : MonoBehaviour
                 audience.Post(gameObject);
                 endFirework.Post(gameObject);
                 GetComponentInChildren<VideoPlayer>().Stop();
+                Instantiate(gameUI, gameObject.transform);
                 end = true;
                 for (int i = 0; i < anims.Length; i++)
                 {
