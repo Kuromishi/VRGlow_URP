@@ -30118,6 +30118,8 @@ MonoBehaviour:
   playing: 0
   scoreText: {fileID: 0}
   comboText: {fileID: 0}
+  leftTVanim: {fileID: 0}
+  rightTVanim: {fileID: 0}
   leftPosition: {x: 0, y: 0, z: -0.35}
   rightPosition: {x: 0, y: 0, z: 0.35}
   startButton: {fileID: 0}
@@ -30129,6 +30131,14 @@ MonoBehaviour:
   upDraft: {fileID: 0}
   npcController: {fileID: 0}
   song:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  audience:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  endFirework:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
