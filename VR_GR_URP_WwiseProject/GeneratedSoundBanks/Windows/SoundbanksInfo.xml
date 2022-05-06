@@ -31,7 +31,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4022639088">
+		<SoundBank Id="3161908922" Language="SFX" Hash="983763495">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -88,7 +88,7 @@
 					<IncludedMemoryFiles>
 						<File Id="980207220" Language="SFX">
 							<ShortName>TutorialBGM.wav</ShortName>
-							<Path>SFX\TutorialBGM_D79FB2B7.wem</Path>
+							<Path>SFX\TutorialBGM_1EAE5280.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

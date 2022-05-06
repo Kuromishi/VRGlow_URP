@@ -14,5 +14,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	484104409	Audience	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\SFX\Audience_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Audience		2211904
 	535262671	button	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\SFX\button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\button		129088
 	622861012	StartBGM	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\SFX\StartBGM_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\StartBGM		13289536
-	980207220	TutorialBGM	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\SFX\TutorialBGM_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialBGM		35384896
+	980207220	TutorialBGM	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\SFX\TutorialBGM_1EAE5280.wem		\Actor-Mixer Hierarchy\Default Work Unit\TutorialBGM		35384960
 

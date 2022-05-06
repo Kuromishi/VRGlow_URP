@@ -2445,6 +2445,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="TutorialBGM" ID="{F7B6D922-97C3-4330-AB63-B1AE24FC3B9E}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0.592422580372964"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>TutorialBGM.wav</AudioFile>
 							<MediaIDList>
