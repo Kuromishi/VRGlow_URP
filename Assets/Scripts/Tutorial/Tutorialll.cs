@@ -42,7 +42,8 @@ public class Tutorialll : MonoBehaviour
         vp = gameObject.GetComponent<VideoPlayer>();
         vp.clip = videoClipList[videoIndex];
 
-        videoPlaying = true;
+        Invoke("VideoPlay", 5);
+        //videoPlaying = true;
     }
     private void Update()
     {
@@ -104,5 +105,9 @@ public class Tutorialll : MonoBehaviour
     {
         Instantiate(sakuraPink, step2Transform_P);
         Instantiate(sakuraBlue, step2Transform_B);
+    }
+    void VideoPlay()
+    {
+        videoPlaying = true;
     }
 }
