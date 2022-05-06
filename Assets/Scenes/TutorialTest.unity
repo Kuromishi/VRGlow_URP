@@ -15810,7 +15810,7 @@ MonoBehaviour:
   videoIndex: 0
   perfectCount: 0
   missCount: 0
-  CountList: 02000000040000000100000002000000
+  CountList: 02000000040000000400000002000000
   phaseBool: 00000000
   videoFrame: 0
   sakuraPink: {fileID: 116335956005659194, guid: dec1295ce633f1b43b0660202e657d5d, type: 3}
