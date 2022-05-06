@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	2099555730	Play_button			\Default Work Unit\Play_button	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	535262671	button	E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\SFX\button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\button		129088
+	535262671	button	D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\SFX\button_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\button		129088
 

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="977454165" Language="SFX" Hash="3218577910">
+		<SoundBank Id="977454165" Language="SFX" Hash="64698635">
 			<ObjectPath>\SoundBanks\Default Work Unit\Button</ObjectPath>
 			<ShortName>Button</ShortName>
 			<Path>Button.bnk</Path>
@@ -31,7 +31,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3272433869">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4022639088">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -72,7 +72,7 @@
 					<IncludedMemoryFiles>
 						<File Id="416915846" Language="SFX">
 							<ShortName>一途な失恋を表現した楽曲.wav</ShortName>
-							<Path>SFX\一途な失恋を表現した楽曲_6AEB197C.wem</Path>
+							<Path>SFX\一途な失恋を表現した楽曲_45443E34.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
