@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: 3a214c02532b9d40addef16aad33c437
       Path: Events\Default Work Unit\Play_Fire
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 6.29551
+      minDuration: 6.29551
     - name: Play_Song
       guid: 51ffd699150874459edf0a42093c36bd
       id: 251043389
