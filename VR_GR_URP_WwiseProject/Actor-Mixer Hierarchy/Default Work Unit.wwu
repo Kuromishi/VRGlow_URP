@@ -2349,7 +2349,6 @@
 				<Sound Name="Fire" ID="{0F3007C7-AA82-406D-ADF9-40113A6311A6}" ShortID="316592041">
 					<PropertyList>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>

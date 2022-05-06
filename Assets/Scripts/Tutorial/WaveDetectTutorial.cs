@@ -7,7 +7,7 @@ public class WaveDetectTutorial : WaveDetect
     private void FixedUpdate()
     {
         timer += Time.deltaTime;
-        if (needStartHint == true)
+        if (needHint == true)
         {
             if (timer >= 1.4f && !rightAppeared)
             {

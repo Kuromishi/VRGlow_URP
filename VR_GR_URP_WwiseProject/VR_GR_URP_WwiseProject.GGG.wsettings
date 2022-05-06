@@ -25,7 +25,7 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="C7FxN4mDhkicpQvCPZdQnQ=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="VpN3QPFTgUqgyd69WbwEKd0gW7SzJ+9PjkGvVY24Wmc="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="3SBbtLMn70+OQa9VjbhaZw=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="mFMFboeUL0ma3ayXIrR5MAEnhhj/////6F3rhMobq06EBgWtWiL9KwEnhhj/////"/>
 				<Property Name="Interactive Music\x64_{2A68D391-C186-4F43-99C6-EE4D9509611A} - SegmentEditorZoomInfo" Type="string" Value="OTHkHdJHIEAPmPIOxzcUQAoYPJb3ahtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAgFpA"/>

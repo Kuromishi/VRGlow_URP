@@ -8,8 +8,6 @@ using UnityEngine.Video;
 
 public class SongControlSystem : MonoBehaviour
 {
-    float timer = 0;
-
     public static int score = 0;
     public static int scoreRatio;
     public static int combo = 0;
@@ -17,7 +15,6 @@ public class SongControlSystem : MonoBehaviour
 
     public bool playing = false;
     bool songPlayed = false;
-    bool scoreShowed = false;
 
     [Header("Score Text")]
     public Text scoreText;
@@ -39,33 +36,44 @@ public class SongControlSystem : MonoBehaviour
     //0：none；
     //1：平敲；1.1:仅左侧；1.2：仅右侧
     //2：上敲；2.1:仅左侧；2.2：仅右侧
+    //2.4：wave321提示，放在2.5的1.5s前面；
     //2.5：wave起手；
     //3：wave(仅判定，无动画)；
     //3.5：wave；
     //4：里跳低敲；4.1:仅左侧；4.2：仅右侧
     //5：里跳高敲；5.1:仅左侧；5.2：仅右侧
     //6：上升气流；6.1:仅左侧；6.2：仅右侧
+    //7：放火！！！！
     //8：画心；
     //9：敲三下（起手）；9.1：仅出现判定点，用于三连敲的第二、三下
     //10：欢呼；
 
     [Header("SongDetect")]
-    public GameObject startButton;
     public GameObject songHintSakura_Blue;
     public GameObject songHintSakura_Blue_Arrow;
     public GameObject songHintSakura_Pink;
     public GameObject songHintSakura_Pink_Arrow;
     public GameObject waveDetect;
-    public GameObject upDraft;
+    public GameObject waveDetectPre;
+    public GameObject upDraft_Blue;
+    public GameObject upDraft_Pink;
 
     [Header("NPC Animation")]
     public GameObject npcController;
     Animator[] anims;
 
+    [Header("Fire In The Middle")]
+    public ParticleSystem[] fires;
+
+    [Header("End Fires")]
+    public GameObject endFire;
+    public Transform[] endFirePositions;
+
     [Header("Wwise Event")]
     public AK.Wwise.Event song;
     public AK.Wwise.Event audience;
     public AK.Wwise.Event endFirework;
+    public AK.Wwise.Event fireInMiddle;
 
     private void Start()
     {
@@ -101,18 +109,16 @@ public class SongControlSystem : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (playing)
+        if (playing && !songPlayed)
         {
-            if (!songPlayed)
-            {
-                AkSoundEngine.StopAll();
-                score = 0;
-                combo = 0;
-                highestCombo = 0;
-                end = false;
-                song.Post(gameObject, (uint)AkCallbackType.AK_Marker, DetectAppear);
-                songPlayed = true;
-            }
+            songPlayed = true;
+            AkSoundEngine.StopAll();
+            score = 0;
+            combo = 0;
+            highestCombo = 0;
+            end = false;
+            song.Post(gameObject, (uint)AkCallbackType.AK_Marker, DetectAppear);
+            GetComponentInChildren<VideoPlayer>().Play();
         }
 
         if (combo > highestCombo)
@@ -295,10 +301,15 @@ public class SongControlSystem : MonoBehaviour
 
                 break;
 
+            case 2.4f:
+                //wave start
+                Hint = Instantiate(waveDetectPre, gameObject.transform);
+
+                break;
+
             case 2.5f:
                 //wave start
                 Hint = Instantiate(waveDetect, gameObject.transform);
-                Hint.GetComponent<WaveDetect>().needStartHint = true;
                 Hint.GetComponent<WaveDetect>().needHint = true;
 
                 Invoke("AnimWaveStart", 0.5f);
@@ -308,14 +319,12 @@ public class SongControlSystem : MonoBehaviour
             case 3:
                 //wave
                 Hint = Instantiate(waveDetect, gameObject.transform);
-                Hint.GetComponent<WaveDetect>().needStartHint = false;
                 Hint.GetComponent<WaveDetect>().needHint = false;
 
                 break;
 
             case 3.5f:
                 Hint = Instantiate(waveDetect, gameObject.transform);
-                Hint.GetComponent<WaveDetect>().needStartHint = false;
                 Hint.GetComponent<WaveDetect>().needHint = true;
 
                 Invoke("AnimWave", 1.5f);
@@ -475,12 +484,12 @@ public class SongControlSystem : MonoBehaviour
             case 6:
                 //Whole_Updraft
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(upDraft, gameObject.transform);
+                Hint = Instantiate(upDraft_Blue, gameObject.transform);
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
 
                 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(upDraft, gameObject.transform);
+                Hint = Instantiate(upDraft_Pink, gameObject.transform);
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
 
@@ -491,7 +500,7 @@ public class SongControlSystem : MonoBehaviour
             case 6.1f:
                 //Whole_Updraft
                 bluePosition = new Vector3(float.Parse(timeLineData[index][2]), float.Parse(timeLineData[index][3]), float.Parse(timeLineData[index][4]));
-                Hint = Instantiate(upDraft, gameObject.transform);
+                Hint = Instantiate(upDraft_Blue, gameObject.transform);
                 Hint.transform.position += leftPosition;
                 Hint.transform.position += bluePosition;
 
@@ -502,12 +511,20 @@ public class SongControlSystem : MonoBehaviour
             case 6.2f:
                 //Whole_Updraft
                 pinkPosition = new Vector3(float.Parse(timeLineData[index][5]), float.Parse(timeLineData[index][6]), float.Parse(timeLineData[index][7]));
-                Hint = Instantiate(upDraft, gameObject.transform);
+                Hint = Instantiate(upDraft_Pink, gameObject.transform);
                 Hint.transform.position += rightPosition;
                 Hint.transform.position += pinkPosition;
 
                 Invoke("AnimUpDraft", 1.16f);
 
+                break;
+
+            case 7:
+                for (int i = 0; i < fires.Length; i++)
+                {
+                    fires[i].Play();
+                }
+                fireInMiddle.Post(gameObject);
                 break;
 
             case 999:
@@ -520,6 +537,10 @@ public class SongControlSystem : MonoBehaviour
                 for (int i = 0; i < anims.Length; i++)
                 {
                     anims[i].Play("Whole_RandomWave");
+                }
+                for (int i = 0; i < endFirePositions.Length; i++)
+                {
+                    Instantiate(endFire, endFirePositions[i]);
                 }
                 break;
         }

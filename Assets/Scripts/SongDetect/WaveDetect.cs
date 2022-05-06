@@ -5,7 +5,6 @@ using UnityEngine;
 public class WaveDetect : MonoBehaviour
 {
     protected float timer = 0;
-    public bool needStartHint;
     public bool needHint;
     protected bool resulted = false;
     protected bool scored = true;
@@ -21,10 +20,6 @@ public class WaveDetect : MonoBehaviour
     {
         rightArrow = transform.GetChild(0).gameObject;
         leftArrow = transform.GetChild(1).gameObject;
-        if (needStartHint)
-        {
-            transform.GetChild(2).gameObject.SetActive(true);
-        }
     }
     private void FixedUpdate()
     {

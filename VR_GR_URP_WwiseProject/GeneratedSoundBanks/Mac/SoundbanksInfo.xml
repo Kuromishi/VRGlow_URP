@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Unity\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>E:\UNITY\VRGlow_URP\VR_GR_URP_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="977454165" Language="SFX" Hash="64698635">
-			<ObjectPath>\SoundBanks\Default Work Unit\Button</ObjectPath>
-			<ShortName>Button</ShortName>
-			<Path>Button.bnk</Path>
-			<IncludedEvents>
-				<Event Id="2099555730" Name="Play_button" ObjectPath="\Events\Default Work Unit\Play_button" DurationType="OneShot" DurationMin="0.731429" DurationMax="0.731429">
-					<IncludedMemoryFiles>
-						<File Id="535262671" Language="SFX">
-							<ShortName>button.wav</ShortName>
-							<Path>SFX\button_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
-		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="983763495">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1786019970">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -60,11 +45,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3015324718" Name="Play_Fire" ObjectPath="\Events\Default Work Unit\Play_Fire" DurationType="Infinite">
+				<Event Id="3015324718" Name="Play_Fire" ObjectPath="\Events\Default Work Unit\Play_Fire" DurationType="OneShot" DurationMin="6.29551" DurationMax="6.29551">
 					<IncludedMemoryFiles>
 						<File Id="180358417" Language="SFX">
 							<ShortName>Fire.wav</ShortName>
-							<Path>SFX\Fire_D79FB2B7.wem</Path>
+							<Path>SFX\Fire_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
