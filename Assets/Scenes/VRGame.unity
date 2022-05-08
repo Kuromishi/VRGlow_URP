@@ -6460,7 +6460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27524,6 +27524,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2174960543265828079, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 9b1ddba614ef92b41b668fb695928195, type: 3}
     - target: {fileID: 2286141344223778913, guid: 903814863f1d6a848ba53ddae2476c10, type: 3}
       propertyPath: onAttachedToHand.m_PersistentCalls.m_Calls.Array.size
       value: 1
